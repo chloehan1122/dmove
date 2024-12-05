@@ -3,145 +3,279 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+   <link rel="stylesheet" href="/css/reset.css">
+   <link rel="stylesheet" href="/css/common.css">
+   <link rel="stylesheet" href="/css/style.css">
   <title>Main</title>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1 class="h-logo">
-        <a href="#"><img src="" alt=""></a>
-      </h1>
-      <!-- pc GNB -->
-      <nav>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </nav>
+      <div class="inner flex-box wd80">
+        <h1 class="h-logo">
+          <a href="/index.html"><img src="/img/dmove-logo.png" alt="DMOVE Co."></a>
+        </h1>
+        <!-- pc GNB -->
+        <nav>
+          <ul class="flex-box gnb-box">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="content">
       <!-- 메인 배너 영역 (4개)-->
-      <main>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+      <main class="wd80">
+        <!-- swiper1 -->
+        <ul class="main-banner">
+          <li class="banner-1 flex-box">
+            <img src="/img/Team-Work-3--Streamline-Milano.png.png" alt="">
+            <div class="banner-wrap">
+              <p class="mb40">
+                Accelerate your <br>
+                business transfromation <br>
+                with Dmove
+              </p>
+              <div class="btn-learn">
+                <a href="#" class="btn">Learn More</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- pagination 연동 -->
+        <ul class="slide-desc flex-box">
+          <li><button>01 Dmove Objective</button></li>
+          <li><button>02 Dmove Objective</button></li>
+          <li><button>03 Dmove Objective</button></li>
+          <li><button>04 Dmove Objective</button></li>
         </ul>
       </main>
-      <div class="content-box">
+      <div class="content-box wd80 inner">
         <!-- our product 영역 -->
         <div class="m-product">
-          <h2></h2>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
+          <h2>Our Product</h2>
+          <ul class="product-ul flex-box">
+            <li>
+              <img src="/img/unsplash_aHXH23QRn7w.png" alt="">
+              <span class="abs-box">Dmove made</span>
+              <div class="context-box">
+                <h3>
+                  Moves User&Contents Management <br>
+                  <i>for Jira and Confluence (Cloud/DC)</i>
+                </h3>
+                <p>
+                  Designed for effective time management and to build <br>
+                  an optimized IT environment by allowing to  manage <br>
+                  inactive users and inefficient data 
+                </p>
+                <div class="btn-read btn">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="/img/unsplash_JKUTrJ4vK00.png" alt="">
+              <span class="abs-box">Dmove made</span>
+              <div class="context-box">
+                <h3>
+                  Moves Eye
+                </h3>
+                <p>
+                  Designed to monitor IT infrastructural enterprises <br>
+                  and to transform sorts of unorganized data <br>
+                  (server/DB/network/cloud) as into reasonable <br>
+                  graphics charts and dashboards
+                </p>
+                <div class="btn-read">
+                  <a href="#" class="btn">Read More</a>
+                </div>
+              </div>
+            </li>
+          </ul> 
         </div>
         <!-- our service 영역 -->
         <div class="m-service">
-          <span></span>
-          <h3></h3>
-          <p></p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <span>Our Service</span>
+          <h3>
+            We provide a full range of portfolio <br>
+            with best-in-class expertise. 
+          </h3>
+          <p>
+            We also offer Identity and access management solution <br>
+            to enhance security across Cloud and on-premise by partnership with IDP providers.
+          </p>
+          <ul class="service-ul flex-box">
+            <li>
+              <img src="/img/To-Do-List-No-Tasks--Streamline-Milano.png.png" alt="">
+              <span>Consulting</span>
+              <p>
+                Optimized IT Environment <br>
+                Exclusively for your company
+              </p>
+            </li>
+            <li>
+              <img src="/img/Updates--Streamline-Milano.png.png" alt="">
+              <span>Development</span>
+              <p>
+                Fulfilling and actualizing <br>
+                Customer requirements 
+              </p>
+            </li>
+            <li>
+              <img src="/img/Brainstorming--Streamline-Milano.png.png" alt="">
+              <span>Education</span>
+              <p>
+                Offer training courses <br>
+                For users and admin
+              </p>
+            </li>
           </ul>
           <div class="btn-lrn">
-            <a href="#"></a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
         <!-- our partner 영역 -->
         <div class="m-partner">
-          <h3></h3>
-          <p></p>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <h3>Partnership with <strong>the best global vendors</strong></h3>
+          <p>Dmove supports diverse industries and teams as a dedicated partner in business success.</p>
+          <ul class="partner-ul flex-box">
+            <li>
+              <a href="#">
+                <img src="/img/Atlassian_logo.png" alt="">
+                <div class="partner-context">
+                  <span>Atlassian</span>
+                  <ul class="ul-style">
+                    <li>Platinum Solution Partner</li>
+                    <li>Licensing for all Atlassian products</li>
+                    <li>Consulting, technical support and maintenance services for Atlassian solution including ITSM, DevOps, CI/CD </li>
+                    <li>Training programs for users and admin</li>
+                  </ul>
+                </div>  
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/img/Zabbix_logo.png" alt="">
+                <div class="partner-context">
+                  <span>Zabbix</span>
+                  <ul class="ul-style">
+                    <li>Zabbix Certified Partner</li>
+                    <li>Zabbix Certified Trainer</li>
+                    <li>Consulting, technical support and maintenance services for Zabbix monitoring solution </li>
+                    <li>Implementation and dashboard customization</li>
+                    <li>Integration with Atlassian products</li>
+                  </ul>
+                </div>  
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/img/Mattermost_logo.png" alt="">
+                <div class="partner-context">
+                  <span>Mattermost</span>
+                  <ul class="ul-style">
+                    <li>Authorized Reseller</li>
+                    <li>Consulting, technical support and maintenance services for both On-premise and SaaS messaging platform</li>
+                    <li>Integration with Atlassian products</li>
+                  </ul>
+                </div>  
+              </a>
+            </li>
           </ul>
         </div>
         <!-- our customer 영역 -->
         <div class="m-customer">
-          <h3></h3>
-          <p></p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <h3>Leading enterprises <strong>trust Dmove</strong></h3>
+          <p>Dmove supports diverse industries and teams as a dedicated partner in business success.</p>
+          <ul class="flex-box cus-bar">
+            <li class="on">All Enterprises</li>
+            <li>Big Enterprises</li>
+            <li>Game/Entertainment</li>
+            <li>Ecommerce</li>
+            <li>Finance</li>
           </ul>
-          <div class="grid-logo">
-            <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+          <div class="cus-logo">
+            <ul class="grid-box grid-ul">
+              <li><a href="#"><img src="/img/company_1_samsung.png" alt="SAMSUNG C&T"></a></li>
+              <li><a href="#"><img src="/img/company_2_doosan.png" alt="DOOSAN"></a></li>
+              <li><a href="#"><img src="/img/company_3_hyundai.png" alt="HYUNDAI CAPITAL"></a></li>
+              <li><a href="#"><img src="/img/company_4_sk.png" alt="SK DISCOVERY"></a></li>
+              <li><a href="#"><img src="/img/company_5_krafton.png" alt="KRAFTON"></a></li>
+              <li><a href="#"><img src="/img/company_6_nc.png" alt="NC"></a></li>
+              <li><a href="#"><img src="/img/company_7_devsisters.png" alt="DEVSISTERS"></a></li>
+              <li><a href="#"><img src="/img/company_8_netmarble.png" alt="NETMARBLE"></a></li>
+              <li><a href="#"><img src="/img/company_9_interpark.png" alt="INTERPARK"></a></li>
+              <li><a href="#"><img src="/img/company_10_lotte.png" alt="LOTTE SHOPPING"></a></li>
+              <li><a href="#"><img src="/img/company_11_shinsegae.png" alt="SHINSEGAE"></a></li>
+              <li><a href="#"><img src="/img/company_12_cj.png" alt="CJ LOGISTICS"></a></li>
+              <li><a href="#"><img src="/img/company_13_shinhan.png" alt="SHINHAN SECURITY"></a></li>
+              <li><a href="#"><img src="/img/company_14_woori.png" alt="WOORI CARD"></a></li>
+              <li><a href="#"><img src="/img/company_15_bithumb.png" alt="BITHUMB"></a></li>
+              <li><a href="#"><img src="/img/company_16_kakaopay.png" alt="KAKAOPAY"></a></li>
             </ul>
           </div>
         </div>
       </div>
       <article>
-        <p></p>
+        <p>Meet Dmove, Your IT Partner</p>
         <div class="btn-contact">
-          <a href="#"></a>
+          <a href="#" class="btn">Contact Us</a>
         </div>
       </article>
       <div class="f-partner">
-        <span></span>
-        <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+        <span>Partners</span>
+        <ul class="flex-box">
+          <li><img src="/img/Platinum Solution Partner clear 1.png" alt="Atlassian Platinum Solution Partner"></li>
+          <li><img src="/img/Badge_Neutral_RGB_Cloud 1.png" alt="Atlassian Cloud Specialized"></li>
+          <li><img src="/img/Badge_Neutral_RGB_ITSM 1.png" alt="Atlassian ITSM Specialized"></li>
+          <li><img src="/img/zabbix_certified_partner.png" alt="Zabbix Certified Partner"></li>
+          <li><img src="/img/zabbix_certified_trainer.png" alt="Zabbix Certified Trainer"></li>
+          <li><img src="/img/Mattermost_logo_banner.png" alt="Mattermost"></li>
         </ul>
       </div>
     </div>
     <footer>
       <div class="f-top">
         <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Unsubscribe</a></li>
+          <li><a href="#">App Privacy & Security</a></li>
         </ul>
         <div class="fam-link">
-          <span></span>
-          <!-- 패밀리사이트 디무브 -->
-          <ul></ul>
+          <span>FAMILY SITE</span>
+          <!-- 패밀리사이트 몇개? -->
+          <ul>
+            <li>
+              <a href="https://dmove.co.kr/main">Dmove Korea</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="f-btm">
         <div class="btm-box">
-          <h1>
-            <a href="#"><img src="" alt=""></a>
+          <h1 class="f-logo">
+            <a href="/index.html"><img src="/img/dmove-logo.png" alt="Dmove Co."></a>
           </h1>
-          <address></address>
-          <p></p>
+          <address>
+            26, Seochojungang-ro 20-gil, Seocho-gu <br>
+            Seoul, Republic of Korea
+          </address>
+          <p>COPYRIGHT &copy; 2021 DMOVE Co., Ltd. All rights reserved.</p>
         </div>
         <ul class="sns-link">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="www.linkedin.com/company/dmove"><img src="/img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+          <li><a href="www.facebook.com/dmovekr"><img src="/img/facebook logo_icon.svg" alt="Facebook"></a></li>
+          <li><a href="www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g"><img src="/img/youtube logo_icon.svg" alt="Youtube"></a></li>
         </ul>
       </div>
     </footer>

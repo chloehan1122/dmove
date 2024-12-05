@@ -7,15 +7,16 @@
 *{margin: 0; padding: 0;}
 a{color: inherit;text-decoration: none;}
 b,strong,h1,h2,h3,h4,h5,h6{
-    font-weight: inherit;
-    font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 i,em,address{
-    font-style: inherit;
+  font-style: inherit;
 }
 ul,ol{
-    list-style: none;
+  list-style: none;
 }
 table{border-collapse: collapse;}
 img{max-width: 100%;}
 input{outline:none}
+button{border: transparent; background: transparent;}
