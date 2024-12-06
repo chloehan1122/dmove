@@ -12,7 +12,7 @@ header .inner{
   align-items: flex-end;
 }
 h1.h-logo{
-  height: 35px;
+  height: 30px;
 }
 h1.h-logo img{
   height: 100%;
@@ -24,7 +24,6 @@ nav{}
   font-weight: 500;
 }
 .gnb-box a{
-  border: 1px solid black;
   display: flex;
   padding: 5px 20px;
 }
@@ -35,11 +34,9 @@ nav{}
 }
 /* 메인 배너 영역 */
 main{
-  border: 1px solid black;
   margin: 0 auto;
 }
 .main-banner{
-  border: 1px solid black;
   padding: 100px;
 }
 .main-banner img{
@@ -57,11 +54,11 @@ main{
   text-wrap-mode: nowrap;
 }
 .banner-1 .btn-learn{
-  border: 2px solid var(--color-main);
   border-radius: 25px;
   width: 160px;
   height: 40px;
-  color: var(--color-main);
+  background-color: var(--color-main);
+  color: #fff;
 }
 .slide-desc button{
   color: var(--color-text-01);
@@ -92,8 +89,10 @@ main{
 }
 .product-ul span{
   color: var(--color-primary-light);
+  font-size: 15px;
   left: 15px;
   top: 310px;
+  text-decoration: underline;
 }
 .product-ul h3{
   font-size: 24px;
@@ -112,16 +111,19 @@ main{
   margin-left: 15px;
 }
 .product-ul .btn-read{
-  border: 2px solid var(--color-main);
   border-radius: 25px;
   width: 160px;
   height: 40px;
-  color: var(--color-main);
+  background-color: var(--color-main);
+  color: #fff;
 }
 
 /* 서비스 영역 */
 .m-service{
   margin-bottom: 100px;
+  background-color: #eeeeee80;
+  border-radius: 50px;
+  padding-bottom: 50px;
 }
 .m-service span{
   color: var(--color-primary-light);
@@ -133,7 +135,7 @@ main{
 .m-service h3{
   color: #000;
   font-size: 34px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -164,37 +166,46 @@ main{
   text-align: center;
 }
 .m-service .btn-lrn{
-  border: 2px solid #777;
   border-radius: 25px;
   width: 160px;
   height: 40px;
-  color: var(--color-text-01);
+  color: var(--color-main);
+  background-color: #fff;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 /* 파트너 영역 */
 .m-partner{
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .m-partner h3{
-  color: var(--color-main);
+  color: #000;
   font-size: 34px;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
 }
 .m-partner p{
   text-align: center;
 }
-.m-partner strong{
+/* .m-partner strong{
   font-weight: 600;
-}
+} */
 .partner-ul{
-  margin-top: 50px;
-  justify-content: space-between;
+  margin-top: 80px;
+  justify-content: space-around;
 }
+/* .partner-ul>li{
+  background-color: #eeeeee80;
+  border-radius: 50px;
+  padding:50px 20px 50px;
+  box-sizing: border-box;
+} */
 .partner-ul img{
-  height: 48px;
+  display: inline-block;
+  object-fit: contain;
+  height: 35px;
   margin-bottom: 20px;
 }
 .partner-context{
@@ -206,10 +217,13 @@ main{
   font-size: 24px;
   font-weight: 600;
   color: #000;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 .partner-context .ul-style{
   margin-left: 15px;
-  font-weight: 500;
+  font-size: 0.9em;
   line-height: 2em;
 }
 
@@ -248,17 +262,19 @@ main{
   color: #fff;
 }
 .cus-logo{
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   margin-bottom: 100px;
+  text-align: center;
 }
 .grid-ul{
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(30px, auto);
-  gap: 20px;
+  /* grid-auto-rows: minmax(10px, auto); */
 }
 .grid-ul li img{
-  width: 100%;
+  width: 80%;
+  object-fit: contain;
+  display: inline-block;
 }
 
 /* 디무브 하단 배너 영역 */
@@ -272,13 +288,68 @@ article{
 
 /* 파트너즈 하단 띠 영역 */
 .f-partner{
-  background-color: #ddd;
-  height: 120px;
+  width: 90%;
+  margin: 0 auto;
+}
+.fp-logo-ul li{
+  width: 100%;
+  padding: 0 10px;
+}
+.fp-logo-ul img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.fp-logo-ul li.ats-size{
+  width: 56%;
+}
+.fp-logo-ul li.zab-size{
+  width: 56%;
+}
+.fp-logo-ul li.mat-size{
+  width: 80%;
 }
 
 /* 푸터영역 */
 footer{
   background-color: #444;
   height: 400px;
+  color: #fff;
+  font-size: 12px;
+}
+.f-top{
+  justify-content: space-between;
+  height: 80%;
+}
+.f-top li{
+  font-size: 12px;
+}
+h1.f-logo{
+  height: 30px;
+}
+h1.f-logo img{
+  height: 100%;
+}
+.f-btm{
+  height: 20%;
+  border-top: 2px solid #000;
+  justify-content: space-between;
+}
+.sns-link{}
+.sns-link li{
   border: 1px solid red;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.sns-link img{
+  display: block;
+  object-fit: contain;
+  width: 100%;
+}
+
+/* 반응형 */
+@media (min-width: 375px) and (max-width: 768px) {
+
 }

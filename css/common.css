@@ -19,13 +19,11 @@ html, body { color: var(--color-text-01); position: relative; font-family: "Popp
 .flex-box { display: flex; }
 .grid-box { display: grid; }
 .abs-box { position: absolute; }
-.inner { margin: 0 auto; }
 .btn { display: flex; justify-content: center; align-items: center; height: 100%; font-size: 14px;}
 .ul-style{ list-style: circle; }
+.inner { max-width: 1280px; margin: 0 auto; padding: 0 40px;}
 
 /* layout */
-.wd80 { width: 80%; }
-
 .ms100 { margin: 100px 0;}
 .ms25 { margin: 0 25px; }
 .mt-auto { margin-top: auto; margin-bottom: 0; }
