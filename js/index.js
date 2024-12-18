@@ -52,7 +52,7 @@ $(document).ready(function(){
     $(".m-product .order-change img").css("order","2")
     $(".m-service br").css("display","block")
     $(".m-customer h3 br.mob").css("display","none")
-    $(".f-partner br.mob").css("display","none")
+    $("article br.mob").css("display","none")
   } else{
     $(".banner-title br.mob").css("display","block")
     $(".banner-span br").css("display","none")
@@ -63,7 +63,7 @@ $(document).ready(function(){
     $(".m-product .order-change img").css("order","1")
     $(".m-service br").css("display","none")
     $(".m-customer h3 br.mob").css("display","block")
-    $(".f-partner br.mob").css("display","block")
+    $("article br.mob").css("display","block")
   }
 
   // customer 영역 버튼 스크롤

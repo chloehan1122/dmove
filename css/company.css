@@ -1,0 +1,165 @@
+/* 헤더 수정영역 */
+.gnb-box li{
+  color: #fff;
+}
+header .btn-contact {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 35px;
+  border-radius: 25px;
+}
+
+/* 바디 영역 */
+.wrap{position: relative;}
+.content{
+  width: 100%;
+  margin-top: 100px;
+}
+/* 메인 배너 영역 */
+main{
+  width: 100%;
+  height: 750px;
+}
+main .banner-box{
+  background: url(/img/photo-banner-company.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main .text-box{
+  transform: translateY(100%);
+}
+main .text-box h1{
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+}
+main .text-box p{
+  width: 1023px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* 섹션 영역 */
+section{border: 1px solid black;}
+section{margin: 50px 0;}
+section.about{}
+section.about h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 50px;
+}
+section.about p{
+  color: #000;
+  font-size: 18px;
+}
+.about .text-box{
+  width: 800px;
+  margin-left: 50px;
+}
+section.newsroom{}
+section.newsroom h2{
+  font-size: 56px;
+  font-weight: 700;
+  color: #000;
+}
+section.newsroom span{
+  font-size: 20px;
+}
+.news-box{
+  margin-top: 50px;
+}
+.news-ul.grid-box{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.news-ul li p{
+  height: 100px;
+  padding: 10px;
+}
+.news-ul li span{
+  font-size: 14px;
+  padding: 0 10px;
+}
+button.btn-more{
+  color: var(--color-main);
+  font-weight: 600;
+  width: 100%;
+  margin-top: 100px
+}
+section.history h2{
+  font-size: 56px;
+  font-weight: 700;
+  color: #000;
+}
+section.history span{
+  font-size: 20px;
+}
+.year-box{
+  margin-top: 50px;
+}
+.year-box .flex-box{
+  align-items: center;
+}
+.year-box .year{
+  font-size: 100px;
+  font-weight: 800;
+  color: #ececec50;
+  width: 400px;
+}
+/* .year-box ul{border: 1px solid black;} */
+.year-box ul li{
+  color: #ececec50;
+  font-size: 24px;
+}
+.year-box .on span{
+  color: #ECECEC;
+}
+.year-box .on li{
+  color: #000;
+}
+section.location{}
+.location article{
+  height: 400px;
+  background-image: url(/img/photo-banner-location.png);
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+}
+.location article h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.location .text-box{
+  margin: 100px 0 20px;
+  justify-content: space-between;
+}
+.location .text-box h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+.location .address-box{
+  text-align: end;
+  color: #000;
+}
+.location .address-box p{
+  font-size: 36px;
+  font-weight: 700;
+}
+.location span{
+  display: flex;
+  justify-content: flex-end;
+}
