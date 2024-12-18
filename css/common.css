@@ -10,6 +10,9 @@
 
 --color-text-01: #777777;
 
+--color-bg-01: #E8F1F1;
+--color-bg-02: #DDFCFC;
+
 /* --color-gray: #888; */
 }
 
@@ -19,7 +22,7 @@ html, body { color: var(--color-text-01); position: relative; font-family: "Popp
 .flex-box { display: flex; }
 .grid-box { display: grid; }
 .abs-box { position: absolute; }
-.btn { display: flex; justify-content: center; align-items: center; height: 100%; font-size: 14px;}
+.btn { display: flex; justify-content: center; align-items: center; height: 100%; font-size: 14px; border-radius: 25px; width: 160px; height: 40px;}
 .ul-style{ list-style: circle; }
 .inner { max-width: 1280px; margin: 0 auto; padding: 0 40px;}
 
