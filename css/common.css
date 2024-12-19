@@ -79,9 +79,9 @@ header.halfshow .btn-contact{
   border: transparent;
 }
 header.halfshow .btn-contact:hover{
-  background: #fff;
+  background: transparent;
   color: #000;
-  border: transparent;
+  border: 2px solid #000;
 }
 header.noshow {
   transform: translateY(-100%);
@@ -136,11 +136,16 @@ header .btn-contact{
   padding: 10px 35px;
   border-radius: 25px;
 }
+header .btn-contact:hover{
+  background-color: var(--color-main);
+  color: #fff;
+  border: transparent;
+}
 
 /* 푸터영역 */
 footer{
   background: linear-gradient(-180deg, rgba(55,158,159,1) 0%, rgba(46,100,101,1) 100%);
-  height: 300px;
+  height: 200px;
   color: #fff;
 }
 footer .inner{
@@ -157,7 +162,7 @@ h1.f-logo {
 }
 h1.f-logo a{
   display: block;
-  height: 30px;
+  height: 25px;
 }
 h1.f-logo img{
   display: block;
@@ -168,20 +173,17 @@ h1.f-logo img{
   border-top: 1px solid #eee;
   justify-content: space-between;
   align-items: center;
-}
-.f-btm h2{
   font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 10px;
 }
 .f-btm .copy{
   margin-right: 50px;
+  font-weight: 400;
 }
 .sns-link{}
 .sns-link li{
   width: 30px;
   height: 30px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 .sns-link img{
   display: block;
@@ -265,7 +267,7 @@ h1.f-logo img{
     height: 100%;
   }
   footer {
-    height: 300px;
+    height: 250px;
     font-size: 12px;
   }
   footer .inner{
@@ -273,7 +275,7 @@ h1.f-logo img{
   }
   h1.f-logo {
     height: 30px;
-    margin: 30px 0 100px;
+    margin: 30px 0 50px;
     flex-direction: row;
   }
   .f-btm {
@@ -284,11 +286,12 @@ h1.f-logo img{
   }
   .f-btm a{
     order: 1;
-    font-size: 16px;
+    font-size: 13px;
     text-transform: uppercase;
   }
   .f-btm p{
     order: 2;
+    font-size: 13px;
     color: #ffffff80;
   }
   .info-box{
@@ -303,6 +306,8 @@ h1.f-logo img{
   }
   .sns-link li {
     margin-left: 0;
+    width: 25px;
+    padding: 0 5px;
   }
 }
 

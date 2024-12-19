@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      <!-- css -->
-      <link rel="stylesheet" href="./css/reset.css">
-      <link rel="stylesheet" href="./css/common.css">
-      <link rel="stylesheet" href="./css/product.css">
-      <!-- swiper -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <!-- js -->
-      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-      <script src="./js/index.js"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/index.js"></script>
     <title>Product</title>
   </head>
 <body>
@@ -33,7 +33,12 @@
           <nav>
             <ul class="flex-box gnb-box">
               <li><a href="#">Company</a></li>
-              <li class="on"><a href="#">Product</a></li>
+              <li class="on"><a href="#">Product</a>
+                <ul>
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Partner</a></li>
             </ul>
@@ -58,10 +63,235 @@
       </div>
     </header>
     <div class="content">
-      <main></main>
+      <main>
+        <div class="banner-box"></div>
+        <div class="text-box inner">
+          <span>For On-premise and Cloud</span>
+          <h1><strong>Moves</strong> by Dmove</h1>
+          <p>
+            Dmove suggests smart solution based on our records
+          </p>
+          <div class="btn-box">
+            <a href="#">User&Contents Management</a>
+            <a href="#">IT Infrastructure Monitoring</a>
+          </div>
+      </main>
       <div class="content-box">
-        <section></section>
-        <section></section>
+        <!-- 플로팅 이미지/책갈피 -->
+        <div class="floating-icon"></div>
+        <!-- 프러덕트 1 영역 -->
+        <section class="moves-ucm">
+          <!-- 메인배너 -->
+          <div class="banner-1">
+            <h1>Moves User&Contents Management</h1>
+            <span>for Jira and Confluence users</span>
+            <img src="" alt="">
+            <ul class="product-icon">
+              <li>
+                <img src="" alt="">
+                <span>Jira <br> Cloud</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Jira Software <br> Data Center</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Confluence <br> Cloud</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Confluence <br> Data Center</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 상세(간략) -->
+          <div class="why-box">
+            <h2>
+              Number one method to reduce unnecessary expenses is by managing users and contents
+            </h2>
+            <div class="icon-wrap">
+              <ul class="icon-box">
+                <li>
+                  <img src="" alt="">
+                  <span>Manage user accounts</span>
+                  <p>Complexity of self-managing individual user records</p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <span>Examine timeless databases</span>
+                  <p>Difficulty of managing expirations of massive data such as projects,issues,pages in JIRA </p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <span>Risk of security</span>
+                  <p>Prevent potential threats from lost tracking data and inactive user accounts</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="func-list-box">
+            <h2>
+              Moves User&Contents Management <i>automatically manages</i>unnecessary users and datas so it protects the system and cuts inefficient resources
+            </h2>
+            <div class="list-wrap">
+              <ul class="list-box">
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>User Management</span>
+                    <p>Reduce expenses and prevent from using unnecessary license by automatically deactivating users who  are no longer active</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Data Management</span>
+                    <p>Allow to manage inactive data by providing data access records of each user from groups</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Dashboard</span>
+                    <p>Show charts of integrated information of active users, dates, inactivating records</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="simple-icon-box">
+            <h3>Dashboards make managements <strong>easy and automatic</strong> </h3>
+            <ul class="simple-ul">
+              <li>
+                <span>Cut License Expenses</span>
+                <p>Automatically eliminate unnecessary contents to avoid license usage</p>
+              </li>
+              <li>
+                <span>Accelerate Security</span>
+                <p>Minimize risks of exposing credential contents and user information</p>
+              </li>
+              <li>
+                <span>Improve Productivity</span>
+                <p>Provide support for users to concentrate in tasks by reducingtime in management</p>
+              </li>
+            </ul>
+          </div>
+          <article>
+            <span>Experience Moves User&Contents Management</span>
+            <div class="btn-wrap">
+              <button>Atlassian Marketplace</button>
+              <button>Learn More</button>
+            </div>
+          </article>
+        </section>
+        <!-- 프러덕트 2 영역 -->
+        <section class="moves-eye">
+          <div class="banner-2">
+            <span>Integrated monitoring solution to build efficient IT infrastructure </span>
+            <h1>MovesEye</h1>
+            <img src="" alt="">
+            <ul class="product-icon">
+              <li>
+                <img src="" alt="">
+                <span>Server</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Network</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Cloud</span>
+              </li>
+              <li>
+                <img src="" alt="">
+                <span>Container</span>
+              </li>
+            </ul>
+          </div>
+          <div class="why-box">
+            <h2>
+              Are you having difficulties monitoring data?
+            </h2>
+            <div class="photo-wrap">
+              <ul class="photo-box">
+                <li>
+                  <img src="" alt="">
+                  <p>Unorganized system and missing important information due to ineffective dashboard</p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <p>Losing track of events due to limited alerts and non-agile respondence</p>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <p>Impossible to catch the connection between network and hosts</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <article>
+            <img src="" alt="">
+            <p>
+              MovesEye’ monitoring technology in realtime supports more accurate and efficient IT operation in both Cloud and on-premise server,network and app  
+            </p>
+          </article>
+          <div class="func-list-box">
+            <h2>
+              <strong>With MovesEye,</strong>monitor your IT environments more efficiently
+            </h2>
+            <div class="list-wrap">
+              <ul class="list-box">
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Custom Dashboard</span>
+                    <p>Build user-centered contents dashboard</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Manage bugs and events</span>
+                    <p>Support bug alert system and provide occasional/status related history</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Alarm System</span>
+                    <p>Support integrated notification system(telegram/line)</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Reports Management</span>
+                    <p>Create date centered usage reports of infra CPU, memory, disk I/0 and network resource index</p>
+                  </div>
+                </li>
+                <li class="flex-box">
+                  <img src="" alt="">
+                  <div class="text-box">
+                    <span>Map View</span>
+                    <p>Provide 3D tautology map of network infrastructure</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <article>
+            <p>
+              <strong>MovesEye works beyond recording data,</strong><br>
+              it acknowledges the problem and resolves it for better system 
+            </p>
+            <div class="btn-wrap">
+              <button>Atlassian Marketplace</button>
+              <button>Learn More</button>
+            </div>
+          </article>
+        </section>
       </div>
     </div>
     <footer>

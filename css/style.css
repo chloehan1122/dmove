@@ -172,7 +172,7 @@ main .swiper-pagination-bullet-active {
 }
 .m-service span{
   color: var(--color-primary-light);
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   text-align: center;
   padding: 50px 0 20px;
@@ -263,6 +263,7 @@ main .swiper-pagination-bullet-active {
   box-sizing: border-box;
   position: relative;
   margin-right: 50px;
+  transition: all .2s ease-in 0s;
 }
 .partner-ul>li:last-of-type{
   margin-right: 0;
@@ -402,7 +403,7 @@ article .flex-box{
 }
 article p{
   color: var(--color-main);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
 }
 article .btn-contact{
@@ -423,25 +424,25 @@ article .btn-contact:hover{
 .f-partner .flex-box{
   align-items: center;
 }
+.fp-logo-ul{
+  height: 60px;
+  /* animation:loopLogo 50s linear 0s infinite; */
+}
 .fp-logo-ul li{
   padding: 0 10px;
-  /* border: 1px solid red; */
+  height: 100%;
+  box-sizing: border-box;
 }
 .fp-logo-ul img{
   display: inline-block;
-  height: 50px;
   object-fit: contain;
+  width: 100%;
+  max-height: 60px;
 }
-.fp-logo-ul li.size img{
-  min-width: 150px;
-}
-.fp-logo-ul{
-  animation:loopLogo 100s linear -20s infinite;
-}
-@keyframes loopLogo {
+/* @keyframes loopLogo {
   0%{transform:translateX(100%);}
   100%{transform:translateX(-100%);}
-}
+} */
 
 /* 반응형 */
 /* @media (min-width: 375px) and (max-width: 768px) */
@@ -680,7 +681,7 @@ article .btn-contact:hover{
     opacity: 1;
     margin-left: 20px;
     margin-top: 20px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .partner-ul a{
     display: inline-block;
@@ -764,7 +765,7 @@ article .btn-contact:hover{
     text-align: center;
     align-items: center;
     flex-direction: column;
-}
+  }
   article p {
     font-size: 22px;
     font-weight: 600;
@@ -778,16 +779,18 @@ article .btn-contact:hover{
     margin-bottom: 30px;
   }
   .fp-logo-ul {
-    animation: loopLogo 50s linear -20s infinite;
+    height: auto;
+    /* animation: loopLogo 50s linear -20s infinite; */
+  }
+  .fp-logo-ul li{
+    height: auto;
   }
   .fp-logo-ul img {
-    min-width: 80px;
-    height: 30px;
+    display: inline-block;
+    object-fit: contain;
+    max-width: unset;
+    max-height: unset;
+    height: unset;
   }
-  .fp-logo-ul li.size img {
-    min-width: 120px;
-    height: 40px;
-  }
-  /* .fp-logo-ul li{border: 1px solid red;} */
 
 }

@@ -135,7 +135,7 @@
       </main>
       <script>
         // swiper
-        const swiper1 = new Swiper('main.swiper', {
+        const swiper1 = new Swiper('main', {
         loop: true,
         centeredSlides: true,
         pagination: {
@@ -175,7 +175,7 @@
                   <img src="./img/icon-product-2.png" alt="">
                 </div>
                 <h3>
-                  Moves Eye
+                  MovesEye
                 </h3>
                 <p>
                   Designed to monitor IT infrastructural enterprises <br>
@@ -284,7 +284,7 @@
           </div>
           <script>
             // swiper
-            const swiper2 = new Swiper('.partner-station.swiper', {
+            const swiper2 = new Swiper('.partner-station', {
               slidesPerView: 1,
               spaceBetween: 20,
               grabCursor: true,
@@ -354,22 +354,29 @@
           </div>
         </div>
       </div>
-      <div class="f-partner flex-box">
-        <ul class="flex-box fp-logo-ul">
-          <li class="size"><img src="./img/Platinum_Solution_Partner_clear.svg" alt="Atlassian Platinum Solution Partner"></li>
-          <li><img src="./img/partner-atl-2.png" alt="Atlassian Cloud Specialized"></li>
-          <li><img src="./img/partner-zabbix-1.png" alt="Zabbix Certified Partner"></li>
-          <li><img src="./img/partner-atl-3.png" alt="Atlassian ITSM Specialized"></li>
-          <li><img src="./img/partner-zabbix-2.png" alt="Zabbix Certified Trainer"></li>
-          <li><img src="./img/partner-matter.png" alt="Mattermost"></li>
-          <li class="size"><img src="./img/Platinum_Solution_Partner_clear.svg" alt="Atlassian Platinum Solution Partner"></li>
-          <li><img src="./img/partner-atl-2.png" alt="Atlassian Cloud Specialized"></li>
-          <li><img src="./img/partner-zabbix-1.png" alt="Zabbix Certified Partner"></li>
-          <li><img src="./img/partner-atl-3.png" alt="Atlassian ITSM Specialized"></li>
-          <li><img src="./img/partner-zabbix-2.png" alt="Zabbix Certified Trainer"></li>
-          <li><img src="./img/partner-matter.png" alt="Mattermost"></li>
+      <div class="f-partner flex-box swiper">
+        <ul class="flex-box fp-logo-ul swiper-wrapper">
+          <li class="swiper-slide"><img src="./img/Platinum_Solution_Partner_clear.svg" alt="Atlassian Platinum Solution Partner"></li>
+          <li class="swiper-slide"><img src="./img/partner-atl-2.png" alt="Atlassian Cloud Specialized"></li>
+          <li class="swiper-slide"><img src="./img/partner-zabbix-1.png" alt="Zabbix Certified Partner"></li>
+          <li class="swiper-slide"><img src="./img/partner-atl-3.png" alt="Atlassian ITSM Specialized"></li>
+          <li class="swiper-slide"><img src="./img/partner-zabbix-2.png" alt="Zabbix Certified Trainer"></li>
+          <li class="swiper-slide"><img src="./img/partner-matter.png" alt="Mattermost"></li>
         </ul>
       </div>
+      <script>
+        var swiper = new Swiper(".f-partner", {
+          a11y: false,
+          freeMode: true,
+          speed: 10000,
+          loop: true,
+          slidesPerView: 6,
+          autoplay: {
+            delay: 0.5,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
       <article>
         <div class="inner flex-box">
           <p>Meet Dmove,<br class="mob"> Your IT Partner</p>
