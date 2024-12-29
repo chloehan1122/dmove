@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Contact Us</title>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="header-box">
+        <h1 class="h-logo">
+          <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+        </h1>
+        <!-- pc GNB -->
+        <div class="btn-menu"></div>
+        <nav>
+          <ul class="gnb-box">
+            <li><a href="./company.html">Company</a></li>
+            <li class="depth"><a href="./product.html">Product</a>
+              <ul class="depth-ul">
+                <li><a href="#">Moves User&Contents Management</a></li>
+                <li><a href="#">MovesEye</a></li>
+              </ul>
+            </li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./partner.html">Partner</a></li>
+          </ul>
+          <!-- mob GNB -->
+          <div class="gnb-mob-box">
+            <div class="btn-menu-close">
+              <a href="#">
+                  <img src="../img/btn-menu-close.png" alt="닫기">
+              </a>
+            </div>
+            <ul>
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                <ul class="depth-ul-mob">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+    </div>
+  </header>
+  <div class="contact-content">
+    <div class="inner">
+      <h2>Get in touch</h2>
+      <div class="contact-container">
+        <div class="contact-text-box">
+          <span>Send us a message</span>
+          <p>Respond message would be sent periodically within 2-3 business days.</p>
+        </div>
+        <div class="contact-form-box">
+          <form action="">
+            <fieldset>
+              <div class="form-box">
+                <div class="name">
+                  <label for="name">Full Name*</label>
+                  <input type="text" id="name">
+                </div>
+                <div class="company">
+                  <label for="company">Company</label>
+                  <input type="text" id="company">
+                </div>
+                <div class="email">
+                  <label for="email">Email Address*</label>
+                  <input type="text" id="email">
+                </div>
+                <div class="interest">
+                  <label for="interest">Interested in*</label>
+                  <select name="interest" id="interest">
+                    <option value="">Arrange first consulting</option>
+                    <option value="">Technical support</option>
+                    <option value="">Request quota</option>
+                    <option value="">Become a partner</option>
+                    <option value="">General inquiries</option>
+                </select>
+                </div>
+                <div class="inquiry">
+                  <label for="inquiry">Inquiry</label>
+                  <input type="text" id="inquiry">
+                </div>
+              </div>
+              <div class="consent-box">
+                <div class="agree">
+                  <input type="checkbox" id="agree" checked>
+                  <label for="agree">I acknowledge receipt of Dmove’s <span>Privacy Policy</span> and <span>Terms of Use</span>.</label>
+                </div>
+                <button>Send</button> <!--자사 이메일 연동-->>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact-img">
+          <img src="./img/illust-contact-mob.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="inner">
+      <h1 class="f-logo">
+        <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+      </h1>
+      <div class="f-btm">
+        <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+        <a href="http://dmove.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+        <ul class="sns-link">
+          <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

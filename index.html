@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Main</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-box">
+          <h1 class="h-logo">
+            <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+          </h1>
+          <!-- pc GNB -->
+          <div class="btn-menu"></div>
+          <nav>
+            <ul class="gnb-box">
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth"><a href="./product.html">Product</a>
+                <ul class="depth-ul">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+            </ul>
+            <!-- mob GNB -->
+            <div class="gnb-mob-box">
+              <div class="btn-menu-close">
+                <a href="#">
+                    <img src="../img/btn-menu-close.png" alt="닫기">
+                </a>
+              </div>
+              <ul>
+                <li><a href="./company.html">Company</a></li>
+                <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                  <ul class="depth-ul-mob">
+                    <li><a href="#">Moves User&Contents Management</a></li>
+                    <li><a href="#">MovesEye</a></li>
+                  </ul>
+                </li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./partner.html">Partner</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+      </div>
+    </header>
+    <div class="content">
+      <!-- 메인 배너 영역 (4개)-->
+      <main class="inner swiper">
+        <!-- swiper1 -->
+        <ul class="main-banner swiper-wrapper">
+          <li class="banner-1 swiper-slide">
+            <div class="banner-wrap">
+              <p class="mb40 banner-title">
+                Enterprises <br class="mob"> IT Partner, <br>
+                Dmove
+              </p>
+              <span class="mb40 banner-span">
+                Dmove provides specialized both cloud and on-premise IT solutions <br>
+                based on cooperation, monitoring and security
+              </span>
+              <div class="btn-learn btn">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <img src="./img/illust-banner.png" alt="">
+          </li>
+          <li class="banner-1 swiper-slide">
+            <div class="banner-wrap">
+              <p class="mb40 banner-title">
+                Enterprises <br class="mob"> IT Partner <br>
+                Dmove
+              </p>
+              <span class="mb40 banner-span">
+                Dmove provides specialized both cloud and on-premise IT solutions <br>
+                based on cooperation, monitoring and security
+              </span>
+              <div class="btn-learn btn">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <img src="./img/illust-banner.png" alt="">
+          </li>
+          <li class="banner-1 swiper-slide">
+            <div class="banner-wrap">
+              <p class="mb40 banner-title">
+                Enterprises <br class="mob"> IT Partner <br>
+                Dmove
+              </p>
+              <span class="mb40 banner-span">
+                Dmove provides specialized both cloud and on-premise IT solutions <br>
+                based on cooperation, monitoring and security
+              </span>
+              <div class="btn-learn btn">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <img src="./img/illust-banner.png" alt="">
+          </li>
+          <li class="banner-1 swiper-slide">
+            <div class="banner-wrap">
+              <p class="mb40 banner-title">
+                Enterprises <br class="mob"> IT Partner <br>
+                Dmove
+              </p>
+              <span class="mb40 banner-span">
+                Dmove provides specialized both cloud and on-premise IT solutions <br>
+                based on cooperation, monitoring and security
+              </span>
+              <div class="btn-learn btn">
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <img src="./img/illust-banner.png" alt="">
+          </li>
+        </ul>
+        <!-- navigation -->
+        <!-- <div class="swiper1 swiper-button-prev"></div>
+        <div class="swiper1 swiper-button-next"></div> -->
+        <!-- pagination 연동 -->
+        <div class="swiper-pagination"></div>
+      </main>
+      <script>
+        // swiper
+        const swiper1 = new Swiper('main', {
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+      </script>
+      <div class="content-box">
+        <!-- our product 영역 -->
+        <div class="m-product inner">
+          <h2>Our Product</h2>
+          <ul class="product-ul">
+            <li class="outer">
+              <img src="./img/product-banner-moves-user-contents.png" alt="">
+              <div class="context-box">
+                <div class="img-icon">
+                  <img src="./img/icon-product-1.png" alt="">
+                </div>
+                <h3>
+                  Moves User&Contents <br> Management <br class="mob">
+                  <i>for Jira and Confluence (Cloud/DC)</i>
+                </h3>
+                <p>
+                  Designed for effective time management and to build 
+                  an optimized IT environment by allowing to  manage 
+                  inactive users and inefficient data 
+                </p>
+                <div class="btn-explore btn">
+                  <a href="#">Explore Product</a>
+                </div>
+              </div>
+            </li>
+            <li class="order-change">
+              <img src="./img/product-banner-moves-eyes.png" alt="" style="order: 2;">
+              <div class="context-box" style="order: 1;">
+                <div class="img-icon">
+                  <img src="./img/icon-product-2.png" alt="" style="width: 100%;">
+                </div>
+                <h3>
+                  MovesEye
+                </h3>
+                <p>
+                  Designed to monitor IT infrastructural enterprises
+                  and to transform sorts of unorganized data 
+                  (server/DB/network/cloud) as into reasonable 
+                  graphics charts and dashboards
+                </p>
+                <div class="btn-explore-color btn">
+                  <a href="#">Explore Product</a>
+                </div>
+              </div>
+            </li>
+          </ul> 
+        </div>
+        <!-- our service 영역 -->
+        <div class="m-service">
+          <span>Our Service</span>
+          <h3>
+            Are you ready to experience <br>
+            digital transfomation with Dmove? 
+          </h3>
+          <p>
+            Dmove provides optimized consulting and best technical supports <br>
+            based on customer’s business environments.
+          </p>
+          <ul class="service-ul inner">
+            <li>
+              <img src="./img/illust-our-service-1.png" alt="">
+              <span>Consulting</span>
+              <p>
+                Optimized IT Environment <br>
+                Exclusively for your company
+              </p>
+            </li>
+            <li>
+              <img src="./img/illust-our-service-2.png" alt="">
+              <span>Development</span>
+              <p>
+                Fulfilling and actualizing <br>
+                Customer requirements 
+              </p>
+            </li>
+            <li>
+              <img src="./img/illust-our-service-3.png" alt="">
+              <span>Education</span>
+              <p>
+                Offer training courses <br>
+                For users and admin
+              </p>
+            </li>
+          </ul>
+          <div class="btn-lrn btn">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <!-- our partner 영역 -->
+        <div class="m-partner inner">
+          <h3>Partnership with the best global vendors</h3>
+          <ul class="mob-partner-li btn-swiper">
+            <li class="on">Atlassian</li>
+            <li>Zabbix</li>
+            <li>Mattermost</li>
+          </ul>
+          <div class="partner-station swiper">            
+            <ul class="partner-ul swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/service-atlassian.png" alt="">
+                  <div class="partner-context">
+                    <ul class="ul-style">
+                      <li>Platinum Solution Partner</li>
+                      <li>Licensing for all Atlassian products</li>
+                      <li>Consulting, technical support and maintenance services for Atlassian solution including ITSM, DevOps, CI/CD </li>
+                      <li>Training programs for users and admin</li>
+                    </ul>
+                    <button class="btn-hover">Read More</button>
+                  </div>  
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/service-zabbix.png" alt="">
+                  <div class="partner-context">
+                    <ul class="ul-style">
+                      <li>Zabbix Certified Partner</li>
+                      <li>Zabbix Certified Trainer</li>
+                      <li>Consulting, technical support and maintenance services for Zabbix monitoring solution </li>
+                      <li>Implementation and dashboard customization</li>
+                      <li>Integration with Atlassian products</li>
+                    </ul>
+                    <button class="btn-hover">Read More</button>
+                  </div>  
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="./img/service-mattermost.png" alt="">
+                  <div class="partner-context">
+                    <ul class="ul-style">
+                      <li>Authorized Reseller</li>
+                      <li>Consulting, technical support and maintenance services for both On-premise and SaaS messaging platform</li>
+                      <li>Integration with Atlassian products</li>
+                    </ul>
+                    <button class="btn-hover">Read More</button>
+                  </div>  
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+          <script>
+            // swiper
+            const swiper2 = new Swiper('.partner-station', {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              grabCursor: true,
+              pagination: {
+                    el: '.swiper-pagination',
+                  },
+              breakpoints: {
+                768: {
+                  slidesPerView: 1,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              },
+              // on: {
+              //   slideChange: function () {
+              //     $('.partner-station li').removeClass('active');
+              //     $('.partner-station li').eq(this.realIndex).addClass('active');
+              //   }
+              // },
+            },
+          );
+          </script>
+        </div>
+        <!-- our customer 영역 -->
+        <div class="m-customer inner">
+          <h3>Leading enterprises <br class="mob"> <i>trust Dmove</i></h3>
+          <p>Dmove supports diverse industries and teams as a dedicated partner in business success.</p>
+          <div class="cus-box">
+            <ul class="cus-bar">
+              <li class="on">Big Enterprises</li>
+              <li>Game</li>
+              <li>Ecommerce</li>
+              <li>Finance</li>
+              <li>Travel</li>
+              <div class="cus-slider"></div>
+            </ul>
+          </div>
+          <div class="cus-logo">
+            <ul class="grid-ul">
+              <li class="big on"><a href="#"><img src="./img/customer-logo-1.png" alt="SAMSUNG DISPLAY"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-2.png" alt="SAMSUNG C&T"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-3.png" alt="SAMSUNG SDS"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-4.png" alt="S-CORE"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-5.png" alt="HYUNDAI CAPITAL"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-6.png" alt="HYUNDAI AUTOEVER"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-7.png" alt="SK DISCOVERY"></a></li>
+              <li class="big on"><a href="#"><img src="./img/customer-logo-8.png" alt="DOOSAN"></a></li>
+              <li class="game"><a href="#"><img src="./img/customer-logo-10.png" alt="KRAFTON"></a></li>
+              <li class="game"><a href="#"><img src="./img/customer-logo-9.png" alt="NC"></a></li>
+              <li class="game"><a href="#"><img src="./img/customer-logo-11.png" alt="DEVSISTERS"></a></li>
+              <li class="game"><a href="#"><img src="./img/customer-logo-12.png" alt="NETMARBLE"></a></li>
+              <li class="ecom"><a href="#"><img src="./img/customer-logo-13.png" alt="LOTTE SHOPPING"></a></li>
+              <li class="ecom"><a href="#"><img src="./img/customer-logo-14.png" alt="SHINSEGAE"></a></li>
+              <li class="ecom"><a href="#"><img src="./img/customer-logo-15.png" alt="CJ LOGISTICS"></a></li>
+              <li class="ecom"><a href="#"><img src="./img/customer-logo-16.png" alt="오늘의 집"></a></li>
+              <li class="fina"><a href="#"><img src="./img/customer-logo-17.png" alt="SHINHAN SECURITY"></a></li>
+              <li class="fina"><a href="#"><img src="./img/customer-logo-18.png" alt="WOORI CARD"></a></li>
+              <li class="fina"><a href="#"><img src="./img/customer-logo-19.png" alt="BITHUMB"></a></li>
+              <li class="fina"><a href="#"><img src="./img/customer-logo-20.png" alt="KAKAOPAY"></a></li>
+              <li class="trav"><a href="#"><img src="./img/customer-logo-21.png" alt="INTERPARK TRIPLE"></a></li>
+              <li class="trav"><a href="#"><img src="./img/customer-logo-22.png" alt="YANOLJA"></a></li>
+              <li class="trav"><a href="#"><img src="./img/customer-logo-23.png" alt="여기어때"></a></li>
+              <li class="trav"><a href="#"><img src="./img/customer-logo-24.png" alt="SOCAR"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="f-partner swiper">
+        <ul class="fp-logo-ul swiper-wrapper">
+          <li class="swiper-slide"><img src="./img/Platinum_Solution_Partner_clear.svg" alt="Atlassian Platinum Solution Partner"></li>
+          <li class="swiper-slide"><img src="./img/partner-atl-2.png" alt="Atlassian Cloud Specialized"></li>
+          <li class="swiper-slide"><img src="./img/partner-zabbix-1.png" alt="Zabbix Certified Partner"></li>
+          <li class="swiper-slide"><img src="./img/partner-atl-3.png" alt="Atlassian ITSM Specialized"></li>
+          <li class="swiper-slide"><img src="./img/partner-zabbix-2.png" alt="Zabbix Certified Trainer"></li>
+          <li class="swiper-slide"><img src="./img/partner-matter.png" alt="Mattermost"></li>
+        </ul>
+      </div>
+      <script>
+        var swiper3 = new Swiper(".f-partner", {
+          a11y: false,
+          freeMode: true,
+          speed: 10000,
+          loop: true,
+          slidesPerView: 6,
+          autoplay: {
+            delay: 0.5,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+      <article>
+        <div class="inner">
+          <p>Meet Dmove,<br class="mob"> Your IT Partner</p>
+          <div class="btn-contact btn">
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      <div class="inner">
+        <h1 class="f-logo">
+          <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+        </h1>
+        <div class="f-btm">
+          <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+          <a href="http://dmove.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+          <ul class="sns-link">
+            <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

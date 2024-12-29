@@ -1,0 +1,127 @@
+/* 헤더 수정영역 */
+.gnb-box li{
+  color: #fff;
+}
+header .btn-contact {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 35px;
+  border-radius: 25px;
+}
+
+.mob-partner-li{display: none;}
+.content {
+  width: 100%;
+  margin-top: 100px;
+}
+main {
+  width: 100%;
+  height: 750px;
+}
+main .banner-box {
+  background: url(/img/photo-partner-banner.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main span {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+.content-box{margin-top: 50px;}
+.partner-wrap>li{
+  display: flex;
+  margin-bottom: 50px;
+}
+.partner-wrap .img-box{
+  width: 20%;
+}
+.partner-wrap .img-box img{
+  width: 200px;
+  display: block;
+  object-fit: contain;
+  max-width: unset;
+}
+.partner-wrap .text-box{
+  width: 80%;
+}
+.partner-wrap .text-box p:first-of-type{
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+.partner-wrap .text-box p{
+  margin-bottom: 30px;
+}
+.partner-wrap .banner-box{
+  display: flex;
+}
+.partner-wrap .banner-box li{
+  margin-right: 20px;
+}
+.partner-wrap .banner-box img{
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin-top: 0;
+  }
+  main {
+    width: 100%;
+    height: 70vh;
+  }
+  main .banner-box {
+    width: 100%;
+    height: 70vh;
+  }
+  main span {
+    font-size: 32px;
+  }
+  .inner{width: 90%;}
+  .mob-partner-li{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .mob-partner-li li.on{
+    border: 1px solid transparent;
+    background-color: var(--color-main);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 0 auto;
+  }
+  .mob-partner-li li{
+    color: var(--color-text-01);
+    padding: 5px 15px;
+    margin: 0 auto;
+  }
+  .partner-wrap>li{
+    border: 1px solid #eee;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 50px;
+    padding: 20px 10px;
+  }
+  .partner-wrap .img-box{
+    margin-bottom: 30px;
+  }
+  .partner-wrap .text-box {
+    width: 100%;
+  }
+  .partner-wrap .text-box p:first-of-type {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
