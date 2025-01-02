@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10"> -->
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Contact Us</title>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="header-box">
+        <h1 class="h-logo">
+          <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+        </h1>
+        <!-- pc GNB -->
+        <div class="btn-menu"></div>
+        <nav>
+          <ul class="gnb-box">
+            <li><a href="./company.html">Company</a></li>
+            <li class="depth"><a href="./product.html">Product</a>
+              <ul class="depth-ul">
+                <li><a href="#">Moves User&Contents Management</a></li>
+                <li><a href="#">MovesEye</a></li>
+              </ul>
+            </li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./partner.html">Partner</a></li>
+          </ul>
+          <!-- mob GNB -->
+          <div class="gnb-mob-box">
+            <div class="btn-menu-close">
+              <a href="#">
+                  <img src="../img/btn-menu-close.png" alt="닫기">
+              </a>
+            </div>
+            <ul>
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                <ul class="depth-ul-mob">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+    </div>
+  </header>
+  <div class="contact-content">
+    <div class="inner">
+      <h2>Get in touch</h2>
+      <div class="contact-container">
+        <div class="contact-text-box">
+          <span>Send us a message</span>
+          <p>Respond message would be sent periodically within 2-3 business days.</p>
+        </div>
+        <div class="contact-form-box">
+          <!-- 이메일 주소 변경 및 현재 select 값은 전달 안됨 -->
+          <!-- action="https://formsubmit.co/hanj951122@gmail.com" -->
+          <!-- method="POST" 추가 -->
+          <form action="#" novalidate>
+            <fieldset>
+              <div class="form-box">
+                <div class="name">
+                  <label for="name">Full Name*</label>
+                  <input type="text" id="name" name="name" required data-name="full name"
+                  pattern="[a-zA-Z\s]+"/>
+                  <span class="error-message"></span>
+                </div>
+                <div class="company">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company"/>
+                </div>
+                <div class="email">
+                  <label for="email">Email Address*</label>
+                  <input type="email" id="email" name="email" required data-name="email address" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                  <span class="error-message"></span>
+                </div>
+                <div class="interest">
+                  <label for="interest">Interested in*</label>
+                  <select name="interest" id="interest">
+                    <option value="">Arrange first consulting</option>
+                    <option value="">Technical support</option>
+                    <option value="">Request quota</option>
+                    <option value="">Become a partner</option>
+                    <option value="">General inquiries</option>
+                  </select>
+                </div>
+                <div class="inquiry">
+                  <label for="inquiry">Inquiry</label>
+                  <textarea name="inquiry" id="inquiry" row="10" cols="30" placeholder="Leave us a message"></textarea>
+                </div>
+              </div>
+              <div class="consent-box">
+                <!-- <div class="popup">     
+                  <div class="popup-privacy">
+                    <span onclick="closeBtn(0)" class="btn-close">close</span>
+                    <p style="margin-bottom: 20px;">Dmove App Privacy & Security</p>
+                    <p style="font-size: 18px;font-weight: 600;">1.Presemble</p>
+                    <p style="margin: 10px;">
+                      These terms set out the terms, conditions, procedures and other necessary matters for the use of business-related services (the “Services”) provided by Dmove (the “Company”). This Privacy Policy and Security Policy applies to all of Dmove's products and is intended to inform you about how we treat customer information provided to us and how we collect, process, use, share, control and protect the information you provide to us.We explain how we collect personal information, why we collect it, how we use and share it, the steps we take to protect this information, and how you can exercise your privacy rights. If you do not agree to this Privacy Policy, please do not use our products and services and do not interact with any other aspect of our business. By submitting information to us in any way, using our systems, products or services (the “Services”), or interacting with us through recruitment, events, sales and/or marketing, you consent to the collection, use and transfer of your information.
+                    </p>
+                    <p style="font-size: 18px;font-weight: 600;">1.Presemble</p>
+                    <p style="margin: 10px;">
+                      These terms set out the terms, conditions, procedures and other necessary matters for the use of business-related services (the “Services”) provided by Dmove (the “Company”). This Privacy Policy and Security Policy applies to all of Dmove's products and is intended to inform you about how we treat customer information provided to us and how we collect, process, use, share, control and protect the information you provide to us.We explain how we collect personal information, why we collect it, how we use and share it, the steps we take to protect this information, and how you can exercise your privacy rights. If you do not agree to this Privacy Policy, please do not use our products and services and do not interact with any other aspect of our business. By submitting information to us in any way, using our systems, products or services (the “Services”), or interacting with us through recruitment, events, sales and/or marketing, you consent to the collection, use and transfer of your information.
+                    </p>
+                  </div>
+                  <div class="popup-term">
+                    <span onclick="closeBtn(1)" class="btn-close">close</span>
+                    <p style="margin-bottom: 20px;">Dmove App Privacy & Security</p>
+                    <p style="font-size: 18px;font-weight: 600;">1.Presemble</p>
+                    <p style="margin: 10px;">
+                      These terms set out the terms, conditions, procedures and other necessary matters for the use of business-related services (the “Services”) provided by Dmove (the “Company”). This Privacy Policy and Security Policy applies to all of Dmove's products and is intended to inform you about how we treat customer information provided to us and how we collect, process, use, share, control and protect the information you provide to us.We explain how we collect personal information, why we collect it, how we use and share it, the steps we take to protect this information, and how you can exercise your privacy rights. If you do not agree to this Privacy Policy, please do not use our products and services and do not interact with any other aspect of our business. By submitting information to us in any way, using our systems, products or services (the “Services”), or interacting with us through recruitment, events, sales and/or marketing, you consent to the collection, use and transfer of your information.
+                    </p>
+                    <p style="font-size: 18px;font-weight: 600;">1.Presemble</p>
+                    <p style="margin: 10px;">
+                      These terms set out the terms, conditions, procedures and other necessary matters for the use of business-related services (the “Services”) provided by Dmove (the “Company”). This Privacy Policy and Security Policy applies to all of Dmove's products and is intended to inform you about how we treat customer information provided to us and how we collect, process, use, share, control and protect the information you provide to us.We explain how we collect personal information, why we collect it, how we use and share it, the steps we take to protect this information, and how you can exercise your privacy rights. If you do not agree to this Privacy Policy, please do not use our products and services and do not interact with any other aspect of our business. By submitting information to us in any way, using our systems, products or services (the “Services”), or interacting with us through recruitment, events, sales and/or marketing, you consent to the collection, use and transfer of your information.
+                    </p>
+                  </div>
+                </div> -->
+                <div class="agree">
+                  <input type="checkbox" id="agree" checked/>
+                  <label for="agree">I acknowledge receipt of Dmove’s <span id="privacy" onclick="popupBtn(0)">Privacy Policy</span> and <span id="term" onclick="popupBtn(1)">Terms of Use</span>.</label>
+                </div>
+                <input type="submit" value="Send" class="send custom-button"/> <!--자사 이메일 연동-->
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact-img">
+          <img src="./img/illust-contact-mob.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="inner">
+      <h1 class="f-logo">
+        <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+      </h1>
+      <div class="f-btm">
+        <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+        <a href="http://dmove.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+        <ul class="sns-link">
+          <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  // 약정 체크 및 팝업
+  const popupBtn = (inum) => {
+    // 약관 열기
+    // body scroll 방지 필요
+    // $('body').css('overflow', 'clip'); //현재 클릭시 width 값 늘어남 
+    const popList = $(".popup>div");
+    popList.removeClass('on');
+    if (inum === 0) {
+      $(".popup-privacy").addClass('on'); 
+    } else if (inum === 1) {
+      $(".popup-term").addClass('on');
+    }
+  }
+  // 약관 닫기
+  const closeBtn = (inum) => {
+    if (inum === 0) {
+      $(".popup-privacy").removeClass('on'); 
+    } else if (inum === 1) {
+      $(".popup-term").removeClass('on');
+    }
+  }
+
+  // 폼 입력값 및 제출 
+  // Function to validate an input field
+  function validateInput(input) {
+    const errorMessage = $(input).next('.error-message'); // Find the error message sibling
+    errorMessage.hide(); // Reset the error message
+
+    // Check if the input is valid
+    if (!input.validity.valid) {
+      // Only show error for invalid input (no "enter a value" message)
+      if (input.validity.typeMismatch || input.validity.patternMismatch) {
+        errorMessage.text(`Please enter a valid ${$(input).data('name') || 'value'}.`);
+      }
+      // Display the error message
+      errorMessage.show();
+      // Return false to indicate invalid input
+      return false;
+    }
+    // Return true for valid input
+    return true;
+  }
+
+  function clearErrorMessage(input) {
+    $(input).next('.error-message').hide(); // Hide the error message
+  }
+
+  function checkFormValidity(form) {
+    let isValid = true;
+    // Check the validity of all required inputs
+    $(form).find('input[required]').each(function () {
+      if (!validateInput(this)) {
+        isValid = false;
+      }
+    });
+    // Find the submit input
+    const submitButton = $(form).find('input.send');
+    // Enable or disable the submit button based on validity
+    if (isValid) {
+      submitButton.prop('disabled', false);
+      submitButton.addClass('active'); // Add class for active state
+    } else {
+      submitButton.prop('disabled', true);
+      submitButton.removeClass('active'); // Remove active class if invalid
+    }
+  }
+
+  // Attach event listeners to all required inputs
+  $('form').each(function () {
+    const form = this;
+    // Check form validity when input is typed
+    $(form).find('input[required]').on('input', function () {
+      clearErrorMessage(this);
+      checkFormValidity(form);
+    });
+    // Handle form submission
+    $(form).on('submit', function (event) {
+      let isValid = true;
+      // Validate all inputs with a .error-message sibling
+      $(form).find('input[required]').each(function () {
+        if (!validateInput(this)) {
+          isValid = false;
+        }
+      });
+      // Prevent form submission if any input is invalid
+      if (!isValid) {
+        event.preventDefault();
+      }
+      // let message = `We've received your request and <br> will respond back within 2-3 business days!`
+      // alert(message) 
+      // Swal.fire({
+      //   title: 'Custom Alert',
+      //   text: "We've successfully received your request!",
+      //   icon: 'info',
+      //   confirmButtonText: 'OK'
+      // });
+    });
+  });
+
+  // 단순 전송 버튼 클릭시 정상 작동
+  $(".send").click(function(){
+      Swal.fire({
+        title: 'Thank you!',
+        text: "We've successfully received your request!",
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+  })
+</script>
+<!-- <script>
+  // javascript
+  // 폼 작성 에러메세지 [이름/이메일]
+  // Function to validate an input field
+  function validateInput(input) {
+    const errorMessage = input.nextElementSibling;
+    // Reset the error message
+    errorMessage.style.display = 'none';
+    // Check if the input is valid
+    if (!input.validity.valid) {
+      // Prevent default browser validation
+      if (input.validity.valueMissing) {
+        errorMessage.textContent = `What is your ${input.dataset.name || 'input'}?`;
+      } else if (input.validity.typeMismatch || input.validity.patternMismatch) {
+        errorMessage.textContent = `Please enter a valid ${input.dataset.name || 'value'}.`;
+      }
+      // Display the error message
+      errorMessage.style.display = 'block';
+      return false;
+    }
+    return true;
+  }
+
+  // Function to hide the error message when typing
+  function clearErrorMessage(input) {
+    const errorMessage = input.nextElementSibling;
+    errorMessage.style.display = 'none';
+  }
+
+  // Function to check if all required inputs are valid
+  function checkFormValidity(form) {
+    let isValid = true;
+    // Check the validity of all required inputs
+    form.querySelectorAll('input[required]').forEach((input) => {
+      if (!validateInput(input)) {
+        isValid = false;
+      }
+    });
+    const submitButton = form.querySelector('input.send');
+    // Enable or disable the submit button based on validity
+    if (isValid) {
+      submitButton.disabled = false;
+      submitButton.classList.add('active'); // Add class for active state
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.remove('active'); // Remove active class if invalid
+    }
+  }
+
+  // Attach event listeners to all required inputs
+  document.querySelectorAll('form').forEach((form) => {
+    // Check form validity when input is typed
+    form.querySelectorAll('input[required]').forEach((input) => {
+      input.addEventListener('input', function () {
+        clearErrorMessage(this);
+        checkFormValidity(form);
+      });
+    });
+    // Handle form submission
+    form.addEventListener('submit', function (event) {
+      let isValid = true;
+      // Validate all inputs with a .error-message sibling
+      form.querySelectorAll('input[required]').forEach((input) => {
+        if (!validateInput(input)) {
+          isValid = false;
+        }
+      });
+      // Prevent form submission if any input is invalid
+      if (!isValid) {
+        event.preventDefault();
+      }
+    });
+  });
+</script> -->
+</html>
