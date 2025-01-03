@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/dmove-logo.ico">
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -390,20 +392,23 @@ $(document).ready(function(){
   });
 
   // 기능 toggle
-  $(".consult-2>li").click(function(){
-    const curStatus =  $(this).children('p').is(":visible");
-    if(curStatus) {
-      $(this).children('p').slideUp(500);
-      $(this).removeClass("on"); 
-      console.log("내용 숨김")
-    } else {
-      $(".consult-2>li").children('p').slideUp(500);
-      $(".consult-2>li").removeClass("on");
-      $(this).children('p').slideDown(500);
-      $(this).addClass("on");
-      console.log("내용 보임")
-    }
-  })
+  let winWidth = window.innerWidth; //해상도
+  if(winWidth < 768) {
+    $(".consult-2>li").click(function(){
+      const curStatus =  $(this).children('p').is(":visible");
+      if(curStatus) {
+        $(this).children('p').slideUp(500);
+        $(this).removeClass("on"); 
+        console.log("내용 숨김")
+      } else {
+        $(".consult-2>li").children('p').slideUp(500);
+        $(".consult-2>li").removeClass("on");
+        $(this).children('p').slideDown(500);
+        $(this).addClass("on");
+        console.log("내용 보임")
+      }
+    })
+  }
 });
 </script>
 </html>
