@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/dmove-logo.ico">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/service.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <title>Service</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-box">
+          <h1 class="h-logo">
+            <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+          </h1>
+          <!-- pc GNB -->
+          <div class="btn-menu"></div>
+          <nav>
+            <ul class="gnb-box">
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth"><a href="./product.html">Product</a>
+                <ul class="depth-ul">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              <li class="on"><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+            </ul>
+            <!-- mob GNB -->
+            <div class="gnb-mob-box">
+              <div class="btn-menu-close">
+                <a href="#">
+                    <img src="../img/btn-menu-close.png" alt="닫기">
+                </a>
+              </div>
+              <ul>
+                <li><a href="./company.html">Company</a></li>
+                <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                  <ul class="depth-ul-mob">
+                    <li><a href="#">Moves User&Contents Management</a></li>
+                    <li><a href="#">MovesEye</a></li>
+                  </ul>
+                </li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./partner.html">Partner</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+      </div>
+    </header>
+    <div class="content">
+      <!-- top버튼 -->
+      <div class="btn-top">
+        <img src="./img/top-btn-arrow.png" alt="TOP">
+      </div>
+      <main>
+        <div class="banner-box"></div>
+        <div class="text-box">
+          <p>
+            Experience specialized business process with Dmove’s service
+          </p>
+      </main>
+      <div class="content-box">
+        <a name="consulting" style="display: block; padding-top: 20px;"></a>
+        <section class="consult inner">
+          <ul class="fixed-menu">
+            <li class="on">
+              <a href="#consulting">Consulting</a>
+            </li>
+            <li>
+              <a href="#implementation">Implementation</a>
+            </li>
+            <li>
+              <a href="#development">Development</a>
+            </li>
+          </ul>
+          <div class="consult-1">
+            <span>From initial consulting to ongoing maintenance,</span>
+            <p>Dmove <i>has you covered</i></p>
+            <span>Focus on what matters most - <strong>your business!</strong></span>
+            <ul class="consult-ul">
+              <li class="cons-1">
+                <div class="img-hovered">
+                  <img src="./img/illust-service-1.png" alt="">
+                </div>
+                <div class="text-box">
+                  <span>Analyze and Consulting</span>
+                  <p>Diagnose problems and processes and suggest potential solution</p>
+                </div>
+              </li>
+              <li class="cons-2">
+                <div class="img-hovered">
+                  <img src="./img/illust-service-2.png" alt="">
+                </div>
+                <div class="text-box">
+                  <span>Implement Solution</span>
+                  <p>Construct solution based on infrastructure environment and develop the process</p>
+                </div>
+              </li>
+              <li class="cons-3">
+                <div class="img-hovered">
+                  <img src="./img/illust-service-3.png" alt="">
+                </div>
+                <div class="text-box">
+                  <span>Education</span>
+                  <p>Develop admin access pages and offer training courses for users and admin</p>
+                </div>
+              </li>
+              <li class="cons-4">
+                <div class="img-hovered">
+                  <img src="./img/illust-service-4.png" alt="">
+                </div>
+                <div class="text-box">
+                  <span>Maintenance</span>
+                  <p>Provide essential roadmaps and future maintenance supports</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="consult-2">
+            <li class="on">
+              <div class="text-wrap">
+                <img src="./img/icon-service-1.png" alt="">
+                <span class="title">Advisory Service</span>
+              </div>
+              <p class="hide">Interpret the needs and cooperate for building suggestions and stable roadmaps</p>
+            </li>
+            <li>
+              <div class="text-wrap">
+                <img src="./img/icon-service-2.png" alt="">
+                <span class="title">Optimization</span>
+              </div>
+              <p class="hide">Analyze and develop the solution for optimized business structure</p>
+            </li>
+            <li>
+              <div class="text-wrap">
+                <img src="./img/icon-service-3.png" alt="">
+                <span class="title">Implementation</span>
+              </div>
+              <p class="hide">Support successful implementation of serve ice based on years of records</p>
+            </li>
+            <li>
+              <div class="text-wrap">
+                <img src="./img/icon-service-4.png" alt="">
+                <span class="title">Maintenance</span>
+              </div>
+              <p class="hide">Resolve issues such as licenses, technical supports, trouble shooting etc.</p>
+            </li>
+            <li>
+              <div class="text-wrap">
+                <img src="./img/icon-service-5.png" alt="">
+                <span class="title">Integration</span>
+              </div>
+              <p class="hide">Integrate numerous tools used by enterprises into a single tool</p>
+            </li>
+            <li>
+              <div class="text-wrap">
+                <img src="./img/icon-service-6.png" alt="">
+                <span class="title">Education</span>
+              </div>
+              <p class="hide">Provide training courses for better understanding of products</p>
+            </li>
+          </ul>
+        </section>
+        <a name="implementation" style="display: block; padding-top: 20px;"></a>
+        <section class="implement swiper">
+          <ul class="fixed-menu inner">
+            <li>
+              <a href="#consulting">Consulting</a>
+            </li>
+            <li class="on">
+              <a href="#implementation">Implementation</a>
+            </li>
+            <li>
+              <a href="#development">Development</a>
+            </li>
+          </ul>
+          <ul class="implement-ul swiper-wrapper">
+            <li class="swiper-slide ani-mud">
+              <a href="#">
+                <h4>Project Management</h4>
+                <p>Empower the team projects by applying agile technologyof planning, tracking and managing projects</p>
+                <div class="img-box">
+                  <img src="./img/logo-gradient-blue-jira.svg" alt="Jira">
+                  <img src="./img/logo-gradient-blue-confluence.svg" alt="Confluence">
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide ani-mdu">
+              <a href="#">
+                <h4>IT Service Management</h4>
+                <p>Support IT services based on Jira Service Management</p>
+                <img class="itsm" src="./img/jira-service-management-logo-gradient-blue.svg" alt="Jira Service Management">
+              </a>
+            </li>
+            <li class="swiper-slide ani-mud">
+              <a href="#">
+                <h4>ID & Access Management</h4>
+                <p>Integrate the accounts and heighten the levels of security</p>
+                <div class="img-box">
+                  <img src="./img/Onelogin_Logotype_black_RGB.png" alt="onelogin">
+                  <img src="./img/Okta_Wordmark_Black_S.png" alt="okta">
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide ani-mdu">
+              <a href="#">
+                <h4>DevOps</h4>
+                <p>Automate life cycle between developing and operation team</p>
+                <div class="img-box">
+                  <img src="./img/logo-gradient-blue-jira.svg" alt="Jira">
+                  <img src="./img/logo-gradient-blue-bitbucket.svg" alt="Bitbucket">
+                </div>
+              </a>
+            </li>
+            <li class="swiper-slide ani-mud">
+              <a href="#">
+                <h4>Monitoring</h4>
+                <p>Maximize the systematic stability by analyzing monitoring data of server, network tools and app</p>
+                <img src="./img/Zabbix_logo-RGB_VECTOR.svg" alt="Zabbix">
+              </a>
+            </li> 
+            <li class="swiper-slide ani-mdu">
+              <a href="#">
+                <h4>Message Platform</h4>
+                <p>Provide optimized communication tool</p>
+                <img src="./img/Mattermost_logo_horizontal_denim@2x.png" alt="Mattermost">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <script>
+          var swiper1 = new Swiper(".implement", {
+            autoplay: {
+              delay: 0,
+              disableOnInteraction: false,
+            },
+            speed: 5000,
+            loop: true,
+            loopAdditionalSlides: 1,
+            slidesPerView: 'auto',
+            freeMode: true,
+            grabCursor: true,
+            spaceBetween: 20,
+            breakpoints: {
+              768: {
+                speed: 5000,    
+                spaceBetween: 20,
+              },
+              1024: {
+                speed: 10000,
+                spaceBetween: 60,
+              },
+            },
+          });
+        </script>
+        <a name="development" style="display: block; padding-top: 20px;"></a>
+        <section class="develop inner">
+          <ul class="fixed-menu">
+            <li>
+              <a href="#consulting">Consulting</a>
+            </li>
+            <li>
+              <a href="#implementation">Implementation</a>
+            </li>
+            <li class="on">
+              <a href="#development">Development</a>
+            </li>
+          </ul>
+          <div class="develop-1">
+            <div class="text-box">
+              <h4>Custom Integration</h4>
+              <p>
+                Dmove plans and produces the optimized integrated solution of Atlassian products based on experiences and records of analysis. Integration involves  message platforms, team databases, and API development for BI tool, which in all fulfill the needs of customers
+              </p>
+            </div>
+            <div class="develop-swipe swiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="./img/illust-our-integration-1.png" alt=""></li>
+                <li class="swiper-slide"><img src="./img/illust-our-integration-2.png" alt=""></li>
+                <li class="swiper-slide"><img src="./img/illust-our-integration-3.png" alt=""></li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <script>
+            var swiper2 = new Swiper(".develop-swipe", {
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              slidesPerView: 1,
+              grabCursor: true,
+              // spaceBetween: 20,
+              breakpoints: {
+                768: {
+                  slidesPerView: 1,
+                  pagination: {
+                    el: ".swiper-pagination",
+                  },
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              },
+            });
+          </script>
+          <div class="develop-2">
+            <h4>Custom Dashboard</h4>
+            <p>As the certified partner of Zabbix, Dmove not only technically supports Zabbix installation, but also construct dashboards to meet each user’s needs</p>
+            <div class="dashb-swipe swiper">
+              <ul class="swiper-wrapper">
+                <li class="old-dashboard swiper-slide">
+                  <img src="./img/photo-service-custom-1.png" alt="">
+                  <span>Zabbix-Grafana Integrated Dashboard </span>
+                </li>
+                <li class="swiper-slide">
+                  <img src="./img/photo-service-custom-2.png" alt="">
+                  <span>Customized Dashboard </span>
+                </li>
+              </ul>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </section>
+        <script>
+          var swiper3 = new Swiper(".dashb-swipe", {
+            scrollbar: {
+              el: ".swiper-scrollbar",
+              hide: false,
+            },
+            slidesPerView: 1.2,
+            grabCursor: true,
+            spaceBetween: 40,
+            breakpoints: {
+              768: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+            },
+          });
+        </script>
+      </div>
+    </div>
+    <footer>
+      <div class="inner">
+        <h1 class="f-logo">
+          <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+        </h1>
+        <div class="f-btm">
+          <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+          <a href="https://dmove.co.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+          <ul class="sns-link">
+            <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+$(document).ready(function(){
+  // 스와이퍼 카드 마우스호버 스톱
+  let cards = document.querySelectorAll('.implement-ul>li');
+  cards.forEach(function (card) {
+    card.addEventListener('mouseover', function () {
+      swiper1.autoplay.stop();
+    });
+    card.addEventListener('mouseout', function () { 
+      swiper1.autoplay.start();
+    });
+  });
+
+  // 기능 toggle
+  let winWidth = window.innerWidth; //해상도
+  if(winWidth < 768) {
+    $(".consult-2>li").click(function(){
+      const curStatus =  $(this).children('p').is(":visible");
+      if(curStatus) {
+        $(this).children('p').slideUp(500);
+        $(this).removeClass("on"); 
+        console.log("내용 숨김")
+      } else {
+        $(".consult-2>li").children('p').slideUp(500);
+        $(".consult-2>li").removeClass("on");
+        $(this).children('p').slideDown(500);
+        $(this).addClass("on");
+        console.log("내용 보임")
+      }
+    })
+  }
+});
+</script>
+</html>

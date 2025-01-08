@@ -1,0 +1,492 @@
+/* 헤더 수정영역 */
+.gnb-box li{
+  color: #fff;
+}
+header .btn-contact {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+
+.content {
+  width: 100%;
+  /* position: relative; */
+}
+main {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+main .banner-box {
+  background: url(/img/photo-service-banner.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main .text-box{
+  position: absolute;
+  top: 50%;
+  left: calc((100% - 1280px)/2);
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
+  width: 900px;
+}
+main .text-box p{line-height: 1.2em;}
+.fixed-menu{
+  top: 10px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  z-index: 1000;
+}
+.fixed-menu a{
+  display: block;
+  padding: 10px 50px;
+}
+.fixed-menu li.on{
+  border: 1px solid var(--color-main);
+  background: var(--color-main);
+  border-radius: 25px;
+  color: #fff;
+}
+/* section{border: 1px solid red;} */
+/* 컨설팅 섹선 */
+section.consult{
+  width: 900px;
+  margin: 0 auto;
+}
+.consult-1>span{
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  text-align: center;
+}
+.consult-1>span strong{font-weight: 700;}
+.consult-1>p{
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.consult-1>p i{color: var(--color-main);}
+.consult-ul{
+  /* border: 1px solid black; */
+  width: 900px;
+  height: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  background: url("../img/bg-illust-ellipse.png") no-repeat;
+  background-size: 800px;
+}
+.consult-ul img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  object-fit: contain;
+}
+.consult-ul .text-box{width: 300px;}
+.consult-ul .text-box span{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-main);
+}
+.consult-ul .text-box p{
+  font-size: 18px;
+}
+.consult-ul .cons-1{
+  /* display: flex;
+  align-items: center; */
+  position: absolute;
+  top: 0;
+  left: 60%;
+  transform: translateX(-50%);
+}
+.consult-ul .cons-1 .text-box{width: 400px;}
+.consult-ul .cons-2{
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+}
+.consult-ul .cons-3{
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 35px;
+  left: 58%;
+  transform: translateX(-50%);
+}
+.consult-ul .cons-4{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.cons-3 .text-box{
+  margin-left: 50px;
+}
+.cons-2 .text-box,
+.cons-4 .text-box{
+  margin-top: 20px;
+}
+.consult-2{
+  width: 100%;
+  margin: 0 auto;
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.consult-2 li{
+  border: 1px solid var(--color-main);
+  border-radius: 15px;
+  padding: 20px;
+  min-height: 140px;
+}
+.consult-2 li .text-wrap{
+  display: flex;
+  align-items: flex-end;
+}
+.consult-2 li img{
+  display: inline-block;
+  width: 30px;
+}
+.consult-2 li span.title{
+  line-height: 0.8rem;
+  margin-left: 10px;
+  display: inline-block;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid var(--color-main); */
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+.consult-2 li p{
+  margin-top: 10px;
+}
+
+/* 임플렌테이션 섹션 - swiper */
+section.implement{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-bg-01);
+}
+.implement .implement-ul{
+  border: 1px solid blue;
+  height: 500px;
+  position: absolute;
+  top: 30%;
+}
+.implement-ul li{
+  width: 400px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 400px;
+  /* border: 1px solid #eee; */
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+.implement-ul a{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.implement-ul>li h4{
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.implement-ul>li p{
+  color: #000;
+  margin: 30px 0;
+  width: 300px;
+  margin: 30px auto;
+}
+.implement-ul img{
+  height: 25px;
+  display: inline-block;
+  object-fit: contain;
+}
+.implement-ul img.itsm{
+  height: 38px;
+  display: inline-block;
+  object-fit: contain;
+}
+.img-box img:first-of-type{
+  margin-right: 20px;
+}
+.implement.swiper-free-mode>.swiper-wrapper {
+  transition-timing-function: linear;
+  /* transition-timing-function: ease-out; 
+    이렇게 할 경우 끝김 현상 생김 */
+}
+.develop h4{
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.develop-1{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.develop-1 .text-box{
+  width: 300px;
+}
+.develop-1 .develop-swipe{
+  width: 900px;
+  overflow: hidden;
+}
+.develop-2 p{
+  width: 700px;
+}
+.develop-2 ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.develop-2 ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.develop-2 ul img{
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  /* width: 550px; */
+  object-fit: contain;
+}
+.develop-2 ul span{
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+}
+.develop-2 ul li:first-of-type span{
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 0 100px;
+}
+.develop-2 ul li:last-of-type span{
+  font-size: 24px;
+  font-weight: 600;
+  margin: 30px 0 100px;
+}
+.develop .swiper-scrollbar-drag {
+  background: var(--color-main);
+}
+/* .old-dashboard::before{
+  content: url(../img/illust-bg-custom-dashboard.png);
+  display: block;
+  transform: translate(60%, 40px)
+} */
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin-top: 0;
+  }
+  main {
+    width: 100%;
+    height: 70vh;
+  }
+  main .banner-box {
+    width: 100%;
+    height: 70vh;
+    background: url(/img/photo-service-banner.png) no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+  }
+  .inner{width: 90%;}
+  main .text-box {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    font-weight: 700;
+    width: 350px;
+  }
+  .fixed-menu{
+    transform: unset;
+    justify-content: space-between;
+  }
+  .fixed-menu li.on {
+    border: none;
+    background: transparent;
+    color: var(--color-main);
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .fixed-menu a {
+    padding: unset;
+  }
+  section.consult {
+    width: 90%;
+  }
+  .consult-1>span, 
+  .consult-1>p{
+    font-size: 24px;
+    text-align: start;
+  }
+  .consult-1>p i {
+    color: #000;
+  }
+  .consult-ul {
+    border: unset;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    background: url(../img/bg-illust-line.png)no-repeat;
+    background-position-x: 50%;
+  }
+  .consult-ul .cons-1 {
+    position: static;
+    transform: none;
+  }
+  .consult-ul .cons-2 {
+    position: static;
+    transform: none;
+  }
+  .consult-ul .cons-3 {
+    display: block;
+    position: static;
+    transform: none;
+  }
+  .consult-ul .cons-4 {
+    position: static;
+    transform: none;
+  }
+  .consult-1 .consult-ul .text-box {
+    width: auto;
+    text-align: center;
+    margin: 20px 0 30px;
+  }
+  .consult-ul .text-box p {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+  }
+  .consult-ul img{
+    margin: 0 auto;
+  }
+  .consult-2 {
+    width: 100%;
+    margin: 50px 0;
+    display: block;
+    border: 2px solid var(--color-main);
+    border-radius: 25px;
+  }
+  .consult-2 li {
+    border: none;
+    padding: 20px;
+    opacity: .5;
+    transition: all .5s ease 0s;
+    min-height: unset;
+    padding: 20px 10px 0 15px;
+  }
+  .consult-2 li:last-of-type {
+    padding-bottom: 20px;
+  }
+  .consult-2 li span.title {
+    color: #000;
+  }
+  .consult-2 li.on{
+    height: auto;
+    opacity: 1;
+  }
+  .consult-2 li p{
+    color: #000;
+    height: auto;
+    margin-left: 5px;
+  }
+  .consult-2 li p.hide{
+    display: none;
+  }
+  .consult-2 li.on p{
+    display: block;
+  }
+  .implement-ul li{
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 400px;
+  }
+  .develop-1 {
+    display: block;
+    margin: 50px 0;
+  }
+  .develop-1 .text-box {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .develop-1 .develop-swipe {
+    width: auto;
+    height: 380px;
+  }
+  .develop h4 {
+    text-align: center;
+  }
+  .develop-2 p {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* .old-dashboard::before {
+    content: url(../img/illust-bg-custom-dashboard.png);
+    transform: translate(25%, 80px) scale(.5);
+  } */
+  .develop-2 .dashb-swipe ul span {
+    color: #fff;
+    background-color: var(--color-main);
+  }
+  .develop-2 ul li:first-of-type span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+  }
+  .develop-2 ul li:last-of-type span {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 55px;
+    margin: 0;
+    width: 100%;
+    height: 55px;
+  }
+  .develop .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--color-main);
+    width: 5%;
+    border-radius: 25px;
+  }
+  .develop .swiper-horizontal {
+    min-height: 320px;
+  }
+  .wrap footer{margin-top: 80px;}
+}

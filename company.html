@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/dmove-logo.ico">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/company.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/array.js"></script>
+  <script src="./js/index.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDldAr-2g62QxHLrMI_1l9VsRy4d7FLe4s&language=en"></script>
+  <title>Company</title>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-box">
+          <h1 class="h-logo">
+            <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+          </h1>
+          <!-- pc GNB -->
+          <div class="btn-menu"></div>
+          <nav>
+            <ul class="gnb-box">
+              <li class="on"><a href="./company.html">Company</a></li>
+              <li class="depth"><a href="./product.html">Product</a>
+                <ul class="depth-ul">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+            </ul>
+            <!-- mob GNB -->
+            <div class="gnb-mob-box">
+              <div class="btn-menu-close">
+                <a href="#">
+                    <img src="../img/btn-menu-close.png" alt="닫기">
+                </a>
+              </div>
+              <ul>
+                <li><a href="./company.html">Company</a></li>
+                <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                  <ul class="depth-ul-mob">
+                    <li><a href="#">Moves User&Contents Management</a></li>
+                    <li><a href="#">MovesEye</a></li>
+                  </ul>
+                </li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./partner.html">Partner</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+      </div>
+    </header>
+    <div class="content">
+      <!-- top버튼 -->
+      <div class="btn-top">
+        <img src="./img/top-btn-arrow.png" alt="TOP">
+      </div>
+      <main>
+        <div class="banner-box"></div>
+        <div class="text-box inner">
+          <h1>About Dmove</h1>
+          <p>
+            <!-- br 말고 박스사이징하여 wrap? -->
+            Under the deep acknowledgment of both cloud and on-premises environments, Dmove provides IT consulting and specialized technical solutions optimized to help users achieve their core goals.
+          </p>
+        </div>
+      </main>
+      <div class="content-box inner">
+        <section class="about">
+          <div class="about-info">
+            <img src="./img/illust-about-dmove-1.png" alt="">
+            <div class="text-box">
+              <h2>
+                Dmove is a specialized IT consulting company
+              </h2>
+              <p class="mb20">
+                Dmove provides consulting and technical support services tailored to customer requirements through the world’s leading collaboration tool, Atlassian, and the open-source monitoring solution, Zabbix. 
+              </p>
+              <p class="mb20">
+                Dmove offer a comprehensive range of IT services, including process optimization through customized consulting, CI/CD implementation to enhance developer productivity, and development services aligned with customer needs. 
+              </p>
+              <p>
+                Our services span across both <i>cloud and on-premises</i> environments.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="newsroom">
+          <h2>Newsroom</h2>
+          <span>Stay updated with the latest news from Dmove!</span>
+          <div class="news-box">
+            <ul class="news-ul"></ul>
+            <button class="btn-more" onclick="LoadMoreNews()">Load More</button>
+          </div>
+        </section>
+        <section class="history building">
+          <h2>History</h2>
+          <span>Dmove looks forward to tomorrow</span>
+          <div class="year-box elv">
+            <div class="yr24">
+              <span class="year" style="letter-spacing: -2px;">2024</span>
+              <ul>
+                <li>Training partnership with Zabbix</li>
+                <li>Achieved Atlassian ITSM Specialization</li>
+              </ul>
+            </div>
+            <div class="yr23">
+              <span class="year">2023</span>
+              <ul>
+                <li>Achieved Atlassian Cloud Specialization</li>
+              </ul>
+            </div>
+            <div class="yr22">
+              <span class="year">2022</span>
+              <ul>
+                <li>Certified partnership with Zabbix</li>
+                <li>Reseller partnership with Grafana</li>
+                <li>Certified partnership with OneLogin(One Identify)</li>
+              </ul>
+            </div>
+            <div class="yr21">
+              <span class="year">2021</span>
+              <ul>
+                <li>Solution provider partnership with Okta</li>
+                <li>Partnership with Adaptavist Works (Atlassian Ecosystem)</li>
+                <li>Partnership with ALM Works (Atlassian Ecosystem)</li>
+                <li>Completed Trademark Registration for Dmove</li>
+                <li>Acquired Atlassian Platinum Partner</li>
+                <li>Reseller partnership with Zabbix</li>
+                <li>Established Corporate Research Institute</li>
+                <li>Obtained certification of Venture Business</li>
+              </ul>
+            </div>
+            <div class="yr20">
+              <span class="year">2020</span>
+              <ul>
+                <li>Acquired Atlassian Gold Partner</li>
+                <li>OPN Partnership with Oracle</li>
+                <li>Reseller partnership with Mattermost</li>
+                <li>Solution Partnership with Atlassian</li>
+                <li>Founded Dmove Co.,Ltd</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="location"> <!--구글 api-->
+          <h2>Location</h2>
+          <div class="address-box">
+            <p>South Korea</p>
+            <address>
+              26, Seochojungang-ro 20-gil, Seocho-gu, Seoul, Republic of Korea
+            </address>
+          </div>
+          <span>Affiliate/Partnership Inquiry <i>&nbsp;sales@dmove.kr</i></span>
+          <div class="google-map">
+            <div id="map"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="inner">
+        <h1 class="f-logo">
+          <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+        </h1>
+        <div class="f-btm flex-box">
+          <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+          <a href="https://dmove.co.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+          <ul class="sns-link flex-box">
+            <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  //뉴스
+  let startNumb = 0;
+  let newsMore_count = 6;
+  let newsMore_add = 3; 
+  let windowWidth = $(window).width();
+  if(windowWidth<768){
+    newsMore_count = 3;
+    newsMore_add = 1; //모바일
+  }
+  let endNumb = newsMore_count;
+  let moreBtn = true;
+
+  // news.js 정보 가져오기
+  const inputNewsList =() => {
+    let result = $(".news-ul").html();
+    $(".btn-more").text("Load More");
+    moreBtn = true; //more 상태
+    for(let i=startNumb ; i< endNumb; i++){
+      // console.log(i, arrayNews.length)
+      result += `
+      <li>
+        <a href="#">
+          <div class="img-hovered">
+            <img src="./img/${newlistArray[i].nThumb}" alt="">
+          </div>
+          <p>${newlistArray[i].nDesc}</p>
+        </a>
+      </li>`
+      if(i==newlistArray.length-1){
+        $(".btn-more").text("Show Less");
+        moreBtn = false; //less 상태
+        break;
+      }
+    }
+    $(".news-ul").html(result)
+  }
+  // load more 버튼 클릭하면 더보고 
+  const LoadMoreNews = () => {
+    if (moreBtn) {
+      startNumb = endNumb;      //시작번호 = 6 또는 3
+      endNumb = startNumb + newsMore_add;  //끝번호 =  
+      inputNewsList() 
+    } else {
+      // 보여줄게 없을 땐 반대로 돌아가기
+      $(".news-ul").html('');
+      startNumb = 0;
+      endNumb = newsMore_count;
+      inputNewsList() 
+    }
+  }
+
+  // 구글맵
+  const initMap = async() => {
+    let map;
+    const myLatLng = { lat: 37.492274, lng: 127.015550 };
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    let myIcon = new google.maps.MarkerImage("./img/dmove-flag.png", null, null, null, new google.maps.Size(50, 50));
+    const styledMapType = new google.maps.StyledMapType(
+    // 하단 오픈시 부가적인 구글 기본 마크 전부 사라짐
+    //   [
+    //     {
+    //       featureType: "poi",
+    //       elementType: "labels.icon",
+    //       stylers: [{ visibility: "off" }],
+    //     },
+    //   ],
+    );
+    var mapOptions = {
+      center: new google.maps.LatLng(37.492274, 127.015550),
+      zoom: 18 
+    };
+
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    map.mapTypes.set("styled_map", styledMapType);
+    map.setMapTypeId("styled_map")
+
+    const marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: myIcon,
+      title: 'Dmove Corp.'
+    });
+
+    const contentString = `
+      <div style="color: var(--color-main);font-size: 18px; font-weight: 600; text-align: center; margin-bottom: 10px">Dmove Corp.</div>
+      <div style="text-align: center; line-height: 1.3rem; color: #777; margin-bottom: 10px;font-size: 14px; font-weight: 400">26, Seochojungang-ro 20-gil, <br> Seocho-gu, Seoul, <br> <i style="font-weight: 500; display: block; margin-top: 5px">Republic of Korea</i></div>
+    `;
+
+    const infowindow = new google.maps.InfoWindow({
+      content: contentString,
+      ariaLabel: "Dmove Corp",
+    });
+    // 상시 오픈
+    infowindow.open({
+        anchor: marker,
+        map,
+      });
+    // 마커 클릭시 오픈
+    marker.addListener("click", () => {
+      infowindow.open({
+        anchor: marker,
+        map,
+      });
+    });
+
+  }
+
+  $(document).ready(function(){
+    // 모바일에서 초기환경 뉴스 3개 보이게 설정
+    inputNewsList()  // 6 또는 3
+
+    $(window).scroll(function(){
+      let scrTop2 = $(window).scrollTop();
+      let building_top = $(".building").offset().top;
+      //console.log(scrTop2, building_top)
+      const gap = building_top - scrTop2;
+      console.log(gap)
+      if(windowWidth<768){
+        // 모바일
+        if(gap < -600) $(".elv .year").eq(4).addClass("on")
+        else if(gap < -100) $(".elv .year").eq(3).addClass("on")
+        else if(gap < 100) $(".elv .year").eq(2).addClass("on")
+        else if(gap < 250) $(".elv .year").eq(1).addClass("on")
+        else if(gap < 450) $(".elv .year").eq(0).addClass("on")
+        // else if(gap > 450) $(".elv .year").removeClass("on")
+      }else{
+        // pc
+        if(gap < -600) $(".elv .year").eq(4).addClass("on")
+        else if(gap < -400) $(".elv .year").eq(3).addClass("on")
+        else if(gap < -100) $(".elv .year").eq(2).addClass("on")
+        else if(gap < 100) $(".elv .year").eq(1).addClass("on")
+        else if(gap < 350) $(".elv .year").eq(0).addClass("on")
+        // else if(gap > 450) $(".elv .year").removeClass("on")
+      }
+    })
+    initMap();
+  });
+
+</script>
+</html>

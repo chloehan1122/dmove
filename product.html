@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/dmove-logo.ico">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+    <title>Product</title>
+  </head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <div class="header-box">
+          <h1 class="h-logo">
+            <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+          </h1>
+          <!-- pc GNB -->
+          <div class="btn-menu"></div>
+          <nav>
+            <ul class="gnb-box">
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth on"><a href="./product.html">Product</a>
+                <ul class="depth-ul">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+            </ul>
+            <!-- mob GNB -->
+            <div class="gnb-mob-box">
+              <div class="btn-menu-close">
+                <a href="#">
+                    <img src="../img/btn-menu-close.png" alt="닫기">
+                </a>
+              </div>
+              <ul>
+                <li><a href="./company.html">Company</a></li>
+                <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                  <ul class="depth-ul-mob">
+                    <li><a href="#">Moves User&Contents Management</a></li>
+                    <li><a href="#">MovesEye</a></li>
+                  </ul>
+                </li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./partner.html">Partner</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+      </div>
+    </header>
+    <div class="content">
+      <main>
+        <div class="banner-box"></div>
+        <div class="text-box inner">
+          <span>For On-premise and Cloud</span>
+          <h1>Moves. by Dmove</h1>
+          <p>
+            Dmove suggests smart solution based on our records
+          </p>
+          <div class="btn-box">
+            <a href="#">User&Contents Management</a>
+            <a href="#">IT Infrastructure Monitoring</a>
+          </div>
+      </main>
+      <div class="content-box">
+        <!-- 프러덕트 1 영역 -->
+        <a name="movesucm"></a>
+        <section class="moves-ucm">
+          <!-- 플로팅 이미지/책갈피 --> 
+          <div class="floating-icon">
+            <a href="#moveseye">
+              <h1>MovesEye</h1>
+              <!-- <span>IT Infrastructure Monitoring Software</span> -->
+            </a>
+          </div>
+          <!-- 메인배너 -->
+          <div class="banner-1">
+            <div class="text-box">
+              <h1>Moves User&Contents Management</h1>
+              <span>for Jira and Confluence users</span>
+            </div>
+            <img src="./img/illust-banner-product-1.png" alt="">
+            <ul class="product-icon">
+              <li>
+                <img src="./img/mark-gradient-blue-jira.svg" alt="">
+                <span>Jira <br> Cloud</span>
+              </li>
+              <li class="size-adjust">
+                <img src="./img/jira-software-logo-gradient-blue-logo-rgb.svg" alt="">
+                <span>Jira Software <br> Data Center</span>
+              </li>
+              <li>
+                <img src="./img/mark-gradient-blue-confluence.svg" alt="">
+                <span>Confluence <br> Cloud</span>
+              </li>
+              <li>
+                <img src="./img/mark-gradient-blue-confluence.svg" alt="">
+                <span>Confluence <br> Data Center</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 상세(간략) -->
+          <div class="bg-box-why">
+            <div class="why-box inner">
+              <h2>
+                <strong>Number one method</strong> to reduce unnecessary expenses is by managing users and contents
+              </h2>
+              <div class="icon-wrap swiper">
+                <ul class="icon-box swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img src="./img/illust-manage-user-accounts.png" alt="">
+                    <span>Manage user accounts</span>
+                    <p>Complexity of self-managing individual user records</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="./img/illust-examine-timeless-databases.png" alt="">
+                    <span>Examine timeless databases</span>
+                    <p>Difficulty of managing expirations of massive data such as projects,issues,pages in JIRA </p>
+                  </li>
+                  <li class="swiper-slide">
+                    <img src="./img/illust-risk-of-security.png" alt="">
+                    <span>Risk of security</span>
+                    <p>Prevent potential threats from lost tracking data and inactive user accounts</p>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script>
+                var swiper4 = new Swiper(".icon-wrap", {
+                  slidesPerView: 1,
+                  // autoplay: {
+                  //   delay: 2500,
+                  //   disableOnInteraction: false,
+                  // },
+                  pagination: {
+                  el: '.swiper-pagination',
+                },
+                //  scrollbar: {
+                //    el: ".swiper-scrollbar",
+                //    hide: false, // 슬라이드 후 사라짐 유무
+                //  },
+                  breakpoints: {
+                    768: {
+                      slidesPerView: 1,
+                      centeredSlides: true,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                    },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+          <div class="bg-box-func">
+            <div class="func-list-box">
+              <h2>
+                Moves User&Contents Management <i>automatically manages </i>unnecessary users and datas so it protects the system and cuts inefficient resources
+              </h2>
+              <div class="list-wrap">
+                <ul class="list-box">
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-1.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>User Management</span>
+                      <p>Reduce expenses and prevent from using unnecessary license by automatically deactivating users who  are no longer active</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-2.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Data Management</span>
+                      <p>Allow to manage inactive data by providing data access records of each user from groups</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-3.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Dashboard</span>
+                      <p>Show charts of integrated information of active users, dates, inactivating records</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="simple-icon-box">
+              <h3>Dashboards make managements <strong>easy and automatic</strong> </h3>
+              <ul class="simple-ul">
+                <li class="fir">
+                  <span>Cut License Expenses</span>
+                  <p>Automatically eliminate unnecessary contents to avoid license usage</p>
+                </li>
+                <li class="sec">
+                  <span>Accelerate Security</span>
+                  <p>Minimize risks of exposing credential contents and user information</p>
+                </li>
+                <li class="thir">
+                  <span>Improve Productivity</span>
+                  <p>Provide support for users to concentrate in tasks by reducingtime in management</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <article>
+            <div class="article-wrap inner">
+              <span>Experience Moves User&Contents Management</span>
+              <div class="btn-wrap">
+                <button>Atlassian Marketplace</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- 프러덕트 2 영역 -->
+        <a name="moveseye"></a>
+        <section class="moves-eye">
+          <!-- 플로팅 이미지/책갈피 -->
+          <div class="floating-icon">
+            <a href="#movesucm">
+              <h1>Moves</h1>
+              <p>User&Contents Management</p>
+              <!-- <span>for Jira and Confluence users</span> -->
+            </a>
+          </div>
+          <div class="banner-2">
+            <div class="text-box">
+              <span>Integrated monitoring solution to build efficient IT infrastructure </span>
+              <h1>MovesEye</h1>
+            </div>
+            <img src="./img/illust-banner-product-2.png" alt="">
+            <ul class="product-icon">
+              <li>
+                <img src="./img/icon-product-server.png" alt="">
+                <span>Server</span>
+              </li>
+              <li>
+                <img src="./img/icon-product-network.png" alt="">
+                <span>Network</span>
+              </li>
+              <li>
+                <img src="./img/icon-product-cloud.png" alt="">
+                <span>Cloud</span>
+              </li>
+              <li>
+                <img src="./img/icon-product-container.png" alt="">
+                <span>Container</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-box-why">
+            <div class="why-box inner">
+              <h2>
+                Are you having difficulties <strong>monitoring data?</strong>
+              </h2>
+              <div class="photo-wrap swiper">
+                <ul class="photo-box swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-difficulty-1.png" alt="">
+                    </div>
+                    <p>Unorganized system and missing important information due to ineffective dashboard</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-difficulty-2.png" alt="">
+                    </div>
+                    <p>Losing track of events due to limited alerts and non-agile respondence</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-difficulty-3.png" alt="">
+                    </div>
+                    <p>Impossible to catch the connection between network and hosts</p>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script>
+                var swiper5 = new Swiper(".photo-wrap", {
+                  slidesPerView: 1,
+                  // spaceBetween: 20,
+                  // autoplay: {
+                  //   delay: 2500,
+                  //   disableOnInteraction: false,
+                  // },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                  // scrollbar: {
+                  //   el: ".swiper-scrollbar",
+                  //   hide: false, // 슬라이드 후 사라짐 유무
+                  // },
+                  breakpoints: {
+                    768: {
+                      slidesPerView: 1,
+                      centeredSlides: true,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                    },
+                  },
+                });
+              </script>
+            </div>
+          </div>
+          <article>
+            <img src="./img/photo-moveseye-monitoring.png" alt="">
+            <p>
+              <strong>MovesEye’s monitoring technology</strong> in realtime supports more accurate and efficient IT operation in both Cloud and on-premise server,network and app  
+            </p>
+          </article>
+          <div class="bg-box-func">
+            <div class="func-list-box">
+              <h2>
+                <strong>With MovesEye,</strong>monitor your IT environments more efficiently
+              </h2>
+              <div class="list-wrap">
+                <ul class="list-box">
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-custom-dashboard.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Custom Dashboard</span>
+                      <p>Build user-centered contents dashboard</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-manage-bugs.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Manage bugs and events</span>
+                      <p>Support bug alert system and provide occasional/status related history</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-alarm.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Alarm System</span>
+                      <p>Support integrated notification system(telegram/line)</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-report.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Reports Management</span>
+                      <p>Create date centered usage reports of infra CPU, memory, disk I/0 and network resource index</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-hovered">
+                      <img src="./img/photo-product-map-view.png" alt="">
+                    </div>
+                    <div class="text-box">
+                      <span>Map View</span>
+                      <p>Provide 3D tautology map of network infrastructure</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <article>
+            <div class="article-wrap inner">
+              <p>
+                <strong>MovesEye works beyond recording data,</strong>
+                it acknowledges the problem and resolves it for better system 
+              </p>
+              <div class="btn-wrap">
+                <button>Atlassian Marketplace</button>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="inner">
+        <h1 class="f-logo">
+          <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+        </h1>
+        <div class="f-btm">
+          <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+          <a href="https://dmove.co.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+          <ul class="sns-link">
+            <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script></script>
+</html>

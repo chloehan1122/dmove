@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico/dmove-logo.ico">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10"> -->
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/array.js"></script>
+  <title>Contact Us</title>
+</head>
+<body>
+  <header class="contact-head">
+    <div class="inner">
+      <div class="header-box">
+        <h1 class="h-logo">
+          <a href="./index.html"><img src="./img/dmove-logo-color.png" alt="DMOVE Co."></a>
+        </h1>
+        <!-- pc GNB -->
+        <div class="btn-menu"></div>
+        <nav>
+          <ul class="gnb-box">
+            <li><a href="./company.html">Company</a></li>
+            <li class="depth"><a href="./product.html">Product</a>
+              <ul class="depth-ul">
+                <li><a href="#">Moves User&Contents Management</a></li>
+                <li><a href="#">MovesEye</a></li>
+              </ul>
+            </li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./partner.html">Partner</a></li>
+          </ul>
+          <!-- mob GNB -->
+          <div class="gnb-mob-box">
+            <div class="btn-menu-close">
+              <a href="#">
+                  <img src="../img/btn-menu-close.png" alt="닫기">
+              </a>
+            </div>
+            <ul>
+              <li><a href="./company.html">Company</a></li>
+              <li class="depth-mob" onclick="ClickDepths()"><a href="./product.html">Product</a>
+                <ul class="depth-ul-mob">
+                  <li><a href="#">Moves User&Contents Management</a></li>
+                  <li><a href="#">MovesEye</a></li>
+                </ul>
+              </li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./partner.html">Partner</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <button class="btn-contact"><a href="./contact-us.html">Contact Us</a></button>
+    </div>
+  </header>
+  <div class="contact-content">
+    <div class="inner">
+      <h2>Get in touch</h2>
+      <div class="contact-container">
+        <div class="contact-text-box">
+          <span>Send us a message</span>
+          <p>Respond message would be sent periodically within 2-3 business days.</p>
+        </div>
+        <div class="contact-form-box">
+          <!-- 이메일 전송 후 > 스팸방지 로봇 > 땡큐페이지 -->
+          <form action="https://formsubmit.co/support@dmove.kr" method="POST" novalidate>
+            <fieldset>
+              <div class="form-box">
+                <div class="name">
+                  <label for="name">Full Name*</label>
+                  <input type="text" id="name" name="name" required data-name="full name"
+                  pattern="[a-zA-Z\s]+"/>
+                  <span class="error-message"></span>
+                </div>
+                <div class="company">
+                  <label for="company">Company*</label>
+                  <input type="text" name="company" id="company" required data-name="company name" />
+                </div>
+                <div class="email">
+                  <label for="email">Email Address*</label>
+                  <input type="email" id="email" name="email" required data-name="email address" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                  <span class="error-message"></span>
+                </div>
+                <div class="interest">
+                  <label for="interest">Interested in</label>
+                  <select name="interest" id="interest">
+                    <option value="">Select Option</option>
+                    <option value="Arrange first consulting">Arrange first consulting</option>
+                    <option value="Technical support">Technical support</option>
+                    <option value="Request quota">Request quota</option>
+                    <option value="Become a partner">Become a partner</option>
+                    <option value="General inquiries">General inquiries</option>
+                  </select>
+                </div>
+                <div class="inquiry">
+                  <label for="inquiry">Inquiry*</label>
+                  <textarea name="inquiry" id="inquiry" row="10" cols="30" required data-name="message" placeholder="Leave us a message"></textarea>
+                </div>
+              </div>
+              <div class="consent-box">
+                <div class="modal"></div>
+                <div class="popup">     
+                  <div class="popup-privacy">
+                    <span onclick="closeBtn()" class="btn-close">close</span>
+                    <div class="pcontent"></div>
+                  </div>
+                </div>
+                <div class="agree">
+                  <input type="checkbox" id="agree" required/>
+                  <label for="agree">I acknowledge receipt of Dmove’s <span id="privacy" onclick="popupBtn()">Privacy Policy and Terms of Use</span>.</label>
+                </div>
+                <!-- 연락을 받을 이메일의 제목 지정 -->
+                <input type="hidden" name="_subject" value="신규 문의사항">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <input type="submit" value="Send" class="send custom-button"/> <!--자사 이메일 연동-->
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="contact-img">
+          <img src="./img/illust-contact-mob.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="contact-foot">
+    <div class="inner">
+      <h1 class="f-logo">
+        <a href="./index.html"><img src="./img/dmove-logo.png" alt="Dmove Co."></a>
+      </h1>
+      <div class="f-btm">
+        <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
+        <a href="https://dmove.co.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+        <ul class="sns-link">
+          <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCECZErMzUNvea-4EixE_P_g" target="_blank"><img src="./img/youtube logo_icon.svg" alt="Youtube"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  let result = "";
+  const contentArea = $(".popup-privacy .pcontent"); // 동적 내용 추가 영역
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth; // 스크롤바 너비 계산
+
+  // 약정 html 스타일
+  const updateListAreaStyle = () => {
+    const windowWidth = $(window).width(); // 현재 window 너비 확인
+    let paddingValue;
+    if (windowWidth <= 768) {
+      paddingValue = "10px";
+    } else {
+      paddingValue = "50px";
+    }
+    $(".lcontent").css("padding", `0 ${paddingValue}`);
+  };
+  // 초기 스타일 설정
+  let listArea = $(`<div style="padding: 0 50px; margin-bottom: 50px" class="lcontent"></div>`);
+  $("body").append(listArea);
+  updateListAreaStyle();
+  // 윈도우 리사이즈 이벤트에 따라 업데이트
+  $(window).on("resize", updateListAreaStyle);
+
+  // 약관 열기
+  const popupBtn = () => {
+    // body scroll 방지 필요
+    const popList = $(".popup>div");
+    popList.removeClass('on');
+    $(".modal").addClass('on')
+    $("body").css({
+      "overflow-y": "hidden",
+      "scrollbar-gutter":"stable",
+      "padding-right": scrollBarWidth + "px"  // 스크롤바 너비만큼 padding-right 추가
+    });
+    $("header").css({
+      "padding-right": scrollBarWidth + "px" // header 밀림 보정
+    });
+    $(".popup-privacy").addClass('on'); 
+    // 데이터 동적 추가
+    agreementArray.forEach((term) => {
+      // 제목과 설명 추가
+      listArea.append(`<h1 style="color: #000; margin: 15px 0; font-weight: 500;">${term.aTitle}</h1>`);
+      listArea.append(`<p style="color: #000; font-weight: 400; font-size: 13px">${term.aDesc}</p>`);
+      // 섹션 반복 추가
+      term.aSections.forEach((section) => {
+        listArea.append(`<h3 style="color: #000; margin: 10px 0; font-weight: 500; font-size: 14px">${section.sTitle}</h3>`);
+        const contentArray = Array.isArray(section.sContent) ? section.sContent : [section.sContent];
+        console.log(section.sContent)
+        contentArray.forEach((content) => {
+          if (typeof content === "string") listArea.append(`<p style="color: #000; font-weight: 400; font-size: 13px">${content}</p>`);
+          else if (content.type === "list") {
+            const listItems = content.items.map((item) => `<li style="list-style: circle; margin-left: 20px;">${item}</li>`).join("");
+            listArea.append(`<ul style="color: #000; font-weight: 400; font-size: 13px;">${listItems}</ul>`);
+          }
+        });
+      });
+      // 이렇게 작성할 경우 왜 section.sContent.forEach is not a function 인지?
+      // term.aSections.forEach((section) => {
+      //   listArea.append(`<h3>${section.sTitle}</h3>`);
+      //   section.sContent.forEach((content) => {
+      //     if (typeof content === "string") listArea.append(`<p>${content}</p>`);
+      //     else if (content.type === "list") {
+      //       const listItems = content.items.map((item) => `<li>${item}</li>`).join("");
+      //       listArea.append(`<ul>${listItems}</ul>`);
+      //     }
+      //   });
+      // });
+    });
+  };
+  contentArea.append(listArea)
+
+  // 약관 닫기
+  const closeBtn = () => {
+    $(".modal").removeClass('on')
+    $("body").css({
+      "overflow-y": "auto",
+      "scrollbar-gutter":"auto",
+      "padding-right": "0"
+    });
+    $("header").css({
+      "padding-right": "0" // header 밀림 보정
+    });
+    $(".popup-privacy").removeClass('on'); 
+  }
+
+  // 폼 입력값 및 제출 
+  // Function to validate an input field
+  function validateInput(input) {
+    const errorMessage = $(input).next('.error-message'); // Find the error message sibling
+    //console.log(input,errorMessage);
+    errorMessage.hide(); // Reset the error message
+    
+    // Check if the input is valid
+    if (!input.validity.valid && input.value != "") {
+      // Only show error for invalid input (no "enter a value" message)
+      if (input.validity.typeMismatch || input.validity.patternMismatch) {
+        errorMessage.text(`Please enter a valid ${$(input).data('name') || 'value'}.`);
+      }
+      // Display the error message
+      errorMessage.show();
+      // Return false to indicate invalid input
+      return false;
+    }
+    // Return true for valid input
+    return true;
+  }
+
+  function clearErrorMessage(input) {
+    $(input).next('.error-message').hide(); // Hide the error message
+  }
+
+  function checkFormValidity(form) {
+    let isValid = true;
+    // Check the validity of all required inputs
+    $(form).find('[required]').each(function () {
+      if (!validateInput(this) || $(this).val() === "") {
+        isValid = false;
+      }
+    });
+    // Find the submit input
+    const submitButton = $(form).find('input.send');
+    // Enable or disable the submit button based on validity
+    console.log(submitButton,isValid);
+    if (isValid) {
+      submitButton.prop('disabled', false);
+      submitButton.addClass('active'); // Add class for active state
+    } else {
+      submitButton.prop('disabled', true);
+      submitButton.removeClass('active'); // Remove active class if invalid
+    }
+  }
+
+  // Attach event listeners to all required inputs
+  $('form').each(function () {
+    const form = this;
+    // Check form validity when input is typed
+    $(form).find('input[required]').on('input', function () {
+      clearErrorMessage(this);
+      checkFormValidity(form);
+    });
+  });
+
+  //메시지창 띄우기 - alert
+  const swalOption2 = {
+    icon: 'warning',
+    title: "",
+    text: "",
+    showCancelButton: false,
+    confirmButtonColor: "#36251B",
+    confirmButtonText: "OK",
+    allowOutsideClick:false
+  }
+  const AlertDialog = (stitle,sprompt) => {
+    swalOption2.title = stitle;
+    swalOption2.text = sprompt;
+    return Swal.fire(swalOption2);
+  }
+  //Delay Time
+  const DelayTimes = (times) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve('delayed');
+      }, times);
+    });
+  }
+  //메시지 타이머
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'center-center',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  const AlertTimer = (stitle) => {
+    Toast.fire({
+      icon: 'success',
+      title: stitle
+    })
+  }
+  // 단순 전송 버튼 클릭시 정상 작동
+  $(".send").click(function(){
+    $("body").css({
+      "overflow-y": "hidden",
+      "scrollbar-gutter":"stable",
+      "padding-right": scrollBarWidth + "px" 
+    });
+    if($('#name').val() == "") {
+      AlertDialog('Send Message','Input full name first!');
+      return false;
+    } else if($('#company').val() == "") {
+      AlertDialog('Send Message','Input company name first!');
+      return false;
+    } else if($('#email').val() == "") {
+      AlertDialog('Send Message','Input email address first!');
+      return false;
+    } else if($('#inquiry').val() == "") {
+      AlertDialog('Send Message','Input message first!');
+      return false;
+    // } else if(!$('#agree').checked) {
+    //   AlertDialog('Send Message','Policies consent needed first!');
+    //   return false;
+    }
+    AlertTimer("We've successfully received your request!");
+    setTimeout(() => {
+      window.location.href = "./index.html";
+      // history.go(-1);
+    }, 3000);
+
+  })
+
+</script>
+</html>
