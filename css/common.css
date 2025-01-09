@@ -377,7 +377,7 @@ h1.f-logo img{
     font-size: 14px;
     font-weight: 400;
     line-height: 2rem;
-    color: var(--color-primary-dark);
+    color: #000;
     /* border: 1px solid red; */
   }
   .btn-menu-close{

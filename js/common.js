@@ -18,3 +18,7 @@ const bookmark = (num) => {
   //console.log(scrRunTop);
   window.scrollTo({top: scrRunTop,left: 0,behavior: "smooth"});
 }
+
+const btnDeactive = (e) => {
+  e.preventDefault()
+}

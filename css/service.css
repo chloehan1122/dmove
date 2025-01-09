@@ -15,7 +15,7 @@ header .btn-contact {
 }
 main {
   width: 100%;
-  height: 750px;
+  height: 700px;
   position: relative;
 }
 main .banner-box {
@@ -33,9 +33,9 @@ main .text-box{
   left: calc((100% - 1280px)/2);
   transform: translateY(-50%);
   color: #fff;
-  font-size: 70px;
-  font-weight: 700;
-  width: 900px;
+  font-size: 72px;
+  font-weight: 600;
+  width: 1000px;
 }
 main .text-box p{line-height: 1.2em;}
 .fixed-menu{
@@ -320,7 +320,7 @@ section.implement{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 34px;
-    font-weight: 700;
+    font-weight: 600;
     width: 350px;
   }
   .fixed-menu{

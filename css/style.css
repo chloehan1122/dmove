@@ -263,6 +263,7 @@ main .swiper-pagination-bullet-active {
   box-sizing: border-box;
   position: relative;
   transition: all .2s ease 0s;
+  cursor: pointer;
 }
 .partner-ul>li:last-of-type{
   margin-right: 0;
@@ -280,7 +281,7 @@ main .swiper-pagination-bullet-active {
   transform: translateX(-50%);
   bottom: 50px;
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 .partner-ul>li:hover{
   border: 2px solid var(--color-main);
@@ -288,7 +289,8 @@ main .swiper-pagination-bullet-active {
 }
 .partner-ul>li:hover button{
   opacity: 1;
-  pointer-events: auto;
+  cursor: pointer;
+  /* pointer-events: auto; */
 }
 .partner-ul img{
   display: flex;
@@ -383,7 +385,8 @@ main .swiper-pagination-bullet-active {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 20px;
 }
-.grid-ul img{
+/* 흑백 및 위치 변동 */
+/* .grid-ul img{
   filter: grayscale(1);
   opacity: .2;
   transition: filter .5s ease 0s;
@@ -394,6 +397,17 @@ main .swiper-pagination-bullet-active {
 }
 .grid-ul li.on {
   order: -1;
+} */
+
+/* 사이즈 zoom in */
+.grid-ul img{
+  opacity: .2;
+}
+.grid-ul li.zoom img{
+  scale: 1.1;
+  opacity: 1;
+  border-radius: 50px;
+  transition: scale .2s ease 0s;
 }
 
 /* 파트너즈 하단 띠 영역 */
@@ -636,6 +650,7 @@ input:autofill{ /* 입력하면 파랗게 되는 거 방지 */
 .popup .btn-close:hover{
   opacity: 1;
 }
+.agree{cursor: pointer;}
 
 /* 반응형 */
 /* @media (min-width: 375px) and (max-width: 768px) */
@@ -957,6 +972,22 @@ input:autofill{ /* 입력하면 파랗게 되는 거 방지 */
   }
   .grid-ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-ul li a{
+    display: block;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  .grid-ul li.big.zoom img{border: 1px solid #eee;}
+  .grid-ul li.game.zoom img{border: 1px solid #eee;}
+  .grid-ul li.ecom.zoom img{border: 1px solid #eee;}
+  .grid-ul li.fina.zoom img{border: 1px solid #eee;}
+  .grid-ul li.trav.zoom img{border: 1px solid #eee;}
+  .grid-ul li.zoom img{
+    scale: 1;
+    opacity: 1;
+    border-radius: 50px;
+    transition: opacity .6s ease 0s;
   }
   .f-partner{
     margin-bottom: 30px;

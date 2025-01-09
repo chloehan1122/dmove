@@ -128,12 +128,16 @@ $(document).ready(function(){
     console.log(liwidth,objleft)
     $(".cus-slider").css("left",objleft-firstLeft+offsetLeft)
 
-    // 로고 이미지 흑백 toggle
-    $(".grid-ul>li").removeClass("on")
+    // 1. 로고 이미지 흑백 및 위치변경 toggle
+    // $(".grid-ul>li").removeClass("on")
+    // 2. 로고 이미지 줌인 toggle
+    $(".grid-ul>li").removeClass("zoom")
+    // $(".grid-ul>li").eq($(this).index()).addClass("zoom");
+    // 슬라이더 "Big Enterprises" -> "Big"
     let text = $(this).text().toLowerCase()
     console.log(text)
     if(winWidth > 768 && text=="big enterprises") text="big";
     else text=text.substr(0,4)
-    $("."+text).addClass("on")
+    $("."+text).addClass("zoom")
   })
 });

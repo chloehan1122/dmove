@@ -82,18 +82,19 @@
         </div>
         <div class="contact-form-box">
           <!-- 이메일 전송 후 > 스팸방지 로봇 > 땡큐페이지 -->
-          <form action="https://formsubmit.co/support@dmove.kr" method="POST" novalidate>
+          <!-- <form action="https://formsubmit.co/support@dmove.kr" method="POST" novalidate> -->
+          <form action="https://script.google.com/macros/s/AKfycbxiAOufQ7QbcMufyMViV5z5EPhlKZi-FN47QdVHtVIWY8T6xuxsc84m34sq5j0Fhox0Pw/exec" id="submit-to-google-sheet" onSubmit={handleContact} autoComplete="off" method="POST" novalidate>
             <fieldset>
               <div class="form-box">
                 <div class="name">
                   <label for="name">Full Name*</label>
                   <input type="text" id="name" name="name" required data-name="full name"
-                  pattern="[a-zA-Z\s]+"/>
+                  pattern="[a-zA-Z\s]+" maxlength="30"/>
                   <span class="error-message"></span>
                 </div>
                 <div class="company">
                   <label for="company">Company*</label>
-                  <input type="text" name="company" id="company" required data-name="company name" />
+                  <input type="text" name="company" id="company" required data-name="company name" maxlength="50"/>
                 </div>
                 <div class="email">
                   <label for="email">Email Address*</label>
@@ -114,7 +115,7 @@
                 </div>
                 <div class="inquiry">
                   <label for="inquiry">Inquiry*</label>
-                  <textarea name="inquiry" id="inquiry" row="10" cols="30" required data-name="message" placeholder="Leave us a message"></textarea>
+                  <textarea name="inquiry" id="inquiry" row="10" cols="30" required data-name="message" placeholder="Leave us a message" maxlength="500"></textarea>
                 </div>
               </div>
               <div class="consent-box">
@@ -130,12 +131,13 @@
                   <label for="agree">I acknowledge receipt of Dmove’s <span id="privacy" onclick="popupBtn()">Privacy Policy and Terms of Use</span>.</label>
                 </div>
                 <!-- 연락을 받을 이메일의 제목 지정 -->
-                <input type="hidden" name="_subject" value="신규 문의사항">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                <!-- <input type="hidden" name="_subject" value="신규 문의사항">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html"> -->
                 <input type="submit" value="Send" class="send custom-button"/> <!--자사 이메일 연동-->
               </div>
             </fieldset>
           </form>
+
         </div>
         <div class="contact-img">
           <img src="./img/illust-contact-mob.png" alt="">
@@ -150,7 +152,7 @@
       </h1>
       <div class="f-btm">
         <p>2021 DMOVE Co., Ltd. All rights reserved.</p>
-        <a href="https://dmove.co.kr/policy/appterms" target="_blank">App Privacy & Security</a></li>
+        <a href="./agreement.html" target="_blank">App Privacy & Security</a></li>
         <ul class="sns-link">
           <li><a href="https://www.linkedin.com/company/dmove" target="_blank"><img src="./img/linkedin logo_icon.svg" alt="LinkedIn"></a></li>
           <li><a href="https://www.facebook.com/dmovekr" target="_blank"><img src="./img/facebook logo_icon.svg" alt="Facebook"></a></li>
@@ -371,6 +373,32 @@
       window.location.href = "./index.html";
       // history.go(-1);
     }, 3000);
+
+    // 지메일 api
+    // const handleContact = (event: any) => {
+    //   event.preventDefault();
+    //   const scriptURL =
+    //     'https://script.google.com/macros/s/AKfycbxiAOufQ7QbcMufyMViV5z5EPhlKZi-FN47QdVHtVIWY8T6xuxsc84m34sq5j0Fhox0Pw/exec;' //본인 시트의 웹앱 url
+    //   const form = document.getElementById(
+    //     'submit-to-google-sheet'
+    //   ) as HTMLFormElement;
+    //   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    //     .then(response => {
+    //       console.log('Success!', response);
+    //       form.reset(); // 보내는 값이 성공값이면, form data reset
+    //     })
+    //     .catch(error => console.error('Error!', error.message));
+    // };
+    // 현재시간 저장함수 (한국시간)
+    // const setCurrentTime = () => {
+    //   const TIME_ZONE = 1000 * 60 * 60 * 9;
+    //   const resultTime = new Date(new Date().getTime() + TIME_ZONE)
+    //     .toISOString()
+    //     .replace('T', ' ')
+    //     .slice(0, -5);
+    //   return String(resultTime);
+    // };
+    
 
   })
 
